@@ -97,4 +97,8 @@ casper.eachThen(makeUris(cheatSheets), function(response) {
     counter += 1;
 });
 
+casper.thenOpen('http://relearn.be/commits/', function() {
+    this.capture('render/05-02-commits.pdf');
+});
+
 casper.run();
