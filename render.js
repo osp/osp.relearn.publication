@@ -18,14 +18,16 @@ var deUri = function(uri) {
     return uri.replace('http://relearn.be/r/', '');
 }
 
-var introductionPads = ['relearn::about', 'relearn::introducing-by-couple', 'relearn::introduction-script'];
-var otherFormalPads = ['gesturing-paths', 'can-it-scale-to-the-universe', 'off-grid', 'pedagogy::references', 'learning-situations', ];
-var notePads = ['notes::can-it-scale-to-the-univers', 'notes-off-grid'];
-var cheatSheets = ['how-to-install-free-software', 'using-the-plotter', 'relearn-cheatsheet'];
+var relearnPads = ['relearn::start', 'relearn::about', 'relearn::welcome', 'relearn::contact', 'relearn::repositories', ];
+var Pads2013 = ['2013::debrief', '2013::general-publication', '2013::introducing-by-couple', '2013::introduction-script', '2013::schedule' ];
+var worksessionsPads = ['worksessions_can-it-scale-to-the-universe::introduction','worksessions_can-it-scale-to-the-univers::notes', 'worksessions_gesturing-paths::introduction', 'worksessions_gesturing-paths::notes', 'worksessions_gesturing-paths::tex', 'worksessions_off-grid::introduction', 'worksessions_off-grid::notes' ];
+var notesPads = ['notes::copyright-licenses', 'notes::merging', 'notes::xtreme-pattern-methods'];
+var cheatSheets = ['cheat-sheet::git', 'cheat-sheet::how-to-install-free-software', 'cheat-sheet::using-the-plotter', 'cheat-sheet::tracing'];
+var pedagogy = ['pedagogy::learning situation', 'pedagogy::references'];
 
 casper.start()
 
-casper.page.paperSize = { format: 'A4', orientation: 'portrait', margin: '1cm' };
+casper.page.paperSize = { format: 'A5', orientation: 'portrait', margin: '1.5cm' };
 
 casper.thenOpen('http://relearn.be/', function() {
     this.echo("Start RELEARN PDF generation");
@@ -53,7 +55,7 @@ casper.thenOpen('http://relearn.be/', function() {
 });
 
 
-casper.eachThen(makeUris(introductionPads), function(response) {
+casper.eachThen(makeUris(relearnPads), function(response) {
     this.echo(deUri(response.data));
     this.thenOpen(response.data, function(response) {
         this.capture('render/01-0' + counter + '-' + deUri(response.url) + '.pdf');
@@ -65,7 +67,7 @@ casper.then(function() {
     counter = 2;
 })
 
-casper.eachThen(makeUris(otherFormalPads), function(response) {
+casper.eachThen(makeUris(Pads2013), function(response) {
     this.echo(deUri(response.data));
     this.thenOpen(response.data, function(response) {
         this.capture('render/02-0' + counter + '-' + deUri(response.url) + '.pdf');
@@ -77,7 +79,21 @@ casper.then(function() {
     counter = 2;
 })
 
-casper.eachThen(makeUris(notePads), function(response) {
+
+casper.eachThen(makeUris(worksessionsPads), function(response) {
+    this.echo(deUri(response.data));
+    this.thenOpen(response.data, function(response) {
+        this.capture('render/02-0' + counter + '-' + deUri(response.url) + '.pdf');
+    });
+    counter += 1;
+});
+
+casper.then(function() {
+    counter = 2;
+})
+
+
+casper.eachThen(makeUris(notesPads), function(response) {
     this.echo(deUri(response.data));
     this.thenOpen(response.data, function(response) {
         this.capture('render/03-0' + counter + '-' + deUri(response.url) + '.pdf');
