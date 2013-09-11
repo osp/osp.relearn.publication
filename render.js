@@ -30,9 +30,9 @@ casper.start()
 casper.page.paperSize = { format: 'A5', orientation: 'portrait', 
 		margin: {
                 left : "25mm",
-                top : "5mm",
-                right : "-7mm", // = 10mm (I dunno why...)
-                bottom : "10mm"
+                top : "6mm",
+                right : "9mm", 
+                bottom : "6mm"
             	}
  };
 
