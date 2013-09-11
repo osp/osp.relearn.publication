@@ -27,7 +27,14 @@ var pedagogy = ['pedagogy::learning situation', 'pedagogy::references'];
 
 casper.start()
 
-casper.page.paperSize = { format: 'A5', orientation: 'portrait', margin: '1.5cm' };
+casper.page.paperSize = { format: 'A5', orientation: 'portrait', 
+		margin: {
+                left : "25mm",
+                top : "5mm",
+                right : "-7mm", // = 10mm (I dunno why...)
+                bottom : "10mm"
+            	}
+ };
 
 casper.thenOpen('http://relearn.be/', function() {
     this.echo("Start RELEARN PDF generation");
