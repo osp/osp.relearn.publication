@@ -39,21 +39,21 @@ casper.page.paperSize = { format: 'A5', orientation: 'portrait',
 casper.thenOpen('http://relearn.be/', function() {
     this.echo("Start RELEARN PDF generation");
     this.evaluate(function() {
-        $("#content").html('<p class="titlepages">1. Introduction</p>');
+        $("#content").html('<p style="font-family: Autopia, serif; font-size: 50px; line-height: 1em;">1. Introduction</p>');
     });
     this.capture('render/01-01-Introduction.pdf');
     this.evaluate(function() {
-        $("#content").html('<p class="titlepages">2. Worksessions</p>');
+        $("#content").html('<p style="font-family: Autopia, serif; font-size: 50px; line-height: 1em;">2. Worksessions</p>');
     });
     this.capture('render/02-01-Worksessions.pdf');
     this.evaluate(function() {
-        $("#content").html('<p class="titlepages">3. Pedagogy</p>');
+        $("#content").html('<p style="font-family: Autopia, serif; font-size: 50px; line-height: 1em;">3. Pedagogy</p>');
     });
-    this.capture('render/03-01-Pedagogy.pdf');
+    this.capture('render/04-01-Pedagogy.pdf');
     this.evaluate(function() {
-        $("#content").html('<p class="titlepages">4. Cheat Sheets</p>');
+        $("#content").html('<p style="font-family: Autopia, serif; font-size: 50px; line-height: 1em;">4. Cheat Sheets</p>');
     });
-    this.capture('render/04-01-Cheatsheets.pdf');
+    this.capture('render/05-01-Cheatsheets.pdf');
     this.evaluate(function() {
         $("#content").remove();
         $("body").prepend('<div class="print-only" id="cover"><h1>This is the cover that covers the cover</h1><h2>Relearn - A general publication (soon)</h2></div>')
@@ -87,10 +87,24 @@ casper.then(function() {
 })
 
 
+
+casper.eachThen(makeUris(Images), function(response) {
+    this.echo(deUri(response.data));
+    this.thenOpen(response.data, function(response) {
+        this.capture('render/03-0' + counter + '-' + deUri(response.url) + '.pdf');
+    });
+    counter += 1;
+});
+
+casper.then(function() {
+    counter = 2;
+})
+
+
 casper.eachThen(makeUris(Pedagogy), function(response) {
     this.echo(deUri(response.data));
     this.thenOpen(response.data, function(response) {
-        this.capture('render/02-0' + counter + '-' + deUri(response.url) + '.pdf');
+        this.capture('render/04-0' + counter + '-' + deUri(response.url) + '.pdf');
     });
     counter += 1;
 });
@@ -103,7 +117,7 @@ casper.then(function() {
 casper.eachThen(makeUris(CheatSheets), function(response) {
     this.echo(deUri(response.data));
     this.thenOpen(response.data, function(response) {
-        this.capture('render/03-0' + counter + '-' + deUri(response.url) + '.pdf');
+        this.capture('render/05-0' + counter + '-' + deUri(response.url) + '.pdf');
     });
     counter += 1;
 });
@@ -115,13 +129,13 @@ casper.then(function() {
 casper.eachThen(makeUris(DebriefColophon), function(response) {
     this.echo(deUri(response.data));
     this.thenOpen(response.data, function(response) {
-        this.capture('render/04-0' + counter + '-' + deUri(response.url) + '.pdf');
+        this.capture('render/06-0' + counter + '-' + deUri(response.url) + '.pdf');
     });
     counter += 1;
 });
 
 casper.thenOpen('http://relearn.be/commits/', function() {
-    this.capture('render/05-02-commits.pdf');
+    this.capture('render/07-02-commits.pdf');
 });
 
 casper.run();
