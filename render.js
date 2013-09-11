@@ -18,40 +18,40 @@ var deUri = function(uri) {
     return uri.replace('http://relearn.be/r/', '');
 }
 
-var relearnPads = ['relearn::start', 'relearn::about', 'relearn::welcome', 'relearn::contact', 'relearn::repositories', ];
-var Pads2013 = ['2013::debrief', '2013::general-publication', '2013::introducing-by-couple', '2013::introduction-script', '2013::schedule' ];
-var worksessionsPads = ['worksessions_can-it-scale-to-the-universe::introduction','worksessions_can-it-scale-to-the-univers::notes', 'worksessions_gesturing-paths::introduction', 'worksessions_gesturing-paths::notes', 'worksessions_gesturing-paths::tex', 'worksessions_off-grid::introduction', 'worksessions_off-grid::notes' ];
-var notesPads = ['notes::copyright-licenses', 'notes::merging', 'notes::xtreme-pattern-methods'];
-var cheatSheets = ['cheat-sheet::git', 'cheat-sheet::how-to-install-free-software', 'cheat-sheet::using-the-plotter', 'cheat-sheet::tracing'];
-var pedagogy = ['pedagogy::learning situation', 'pedagogy::references'];
+var Introduction = ['2013::introduction-script', '2013::introducing-by-couple'];
+var Worksessions = ['worksessions::can-it-scale-to-the-universe::introduction', 'worksessions::can-it-scale-to-the-universe::notes', 'worksessions::gesturing-paths::introduction', 'worksessions::gesturing-paths::notes', 'worksessions::off-grid::introduction', 'worksessions::off-grid::notes', 'worksessions::off-grid::xtreme-pattern-methods'];
+var Images = ['images'];
+var Pedagogy = ['pedagogy::references','pedagogy::learning-situations', 'notes::copyright-licenses', 'notes::merging',];
+var CheatSheets = ['cheat-sheet::how-to-install-free-software', 'cheat-sheet::git-and-the-command-line', 'cheat-sheet::using-the-plotter', 'cheat-sheet::tex',];
+var DebriefColophon = ['2013::debrief'];
 
 casper.start()
 
 casper.page.paperSize = { format: 'A5', orientation: 'portrait', 
 		margin: {
                 left : "25mm",
-                top : "5mm",
-                right : "-7mm", // = 10mm (I dunno why...)
-                bottom : "10mm"
+                top : "6mm",
+                right : "9mm", 
+                bottom : "6mm"
             	}
  };
 
 casper.thenOpen('http://relearn.be/', function() {
     this.echo("Start RELEARN PDF generation");
     this.evaluate(function() {
-        $("#content").html("<h1>1. Introduction</h1>");
+        $("#content").html('<p class="titlepages">1. Introduction</p>');
     });
     this.capture('render/01-01-Introduction.pdf');
     this.evaluate(function() {
-        $("#content").html("<h1>2. Texts</h1>");
+        $("#content").html('<p class="titlepages">2. Worksessions</p>');
     });
-    this.capture('render/02-01-Texts.pdf');
+    this.capture('render/02-01-Worksessions.pdf');
     this.evaluate(function() {
-        $("#content").html("<h1>3. Notes</h1>");
+        $("#content").html('<p class="titlepages">3. Pedagogy</p>');
     });
-    this.capture('render/03-01-Notes.pdf');
+    this.capture('render/03-01-Pedagogy.pdf');
     this.evaluate(function() {
-        $("#content").html("<h1>4. Cheatsheets</h1>");
+        $("#content").html('<p class="titlepages">4. Cheat Sheets</p>');
     });
     this.capture('render/04-01-Cheatsheets.pdf');
     this.evaluate(function() {
@@ -62,7 +62,7 @@ casper.thenOpen('http://relearn.be/', function() {
 });
 
 
-casper.eachThen(makeUris(relearnPads), function(response) {
+casper.eachThen(makeUris(Introduction), function(response) {
     this.echo(deUri(response.data));
     this.thenOpen(response.data, function(response) {
         this.capture('render/01-0' + counter + '-' + deUri(response.url) + '.pdf');
@@ -74,7 +74,7 @@ casper.then(function() {
     counter = 2;
 })
 
-casper.eachThen(makeUris(Pads2013), function(response) {
+casper.eachThen(makeUris(Worksessions), function(response) {
     this.echo(deUri(response.data));
     this.thenOpen(response.data, function(response) {
         this.capture('render/02-0' + counter + '-' + deUri(response.url) + '.pdf');
@@ -87,7 +87,7 @@ casper.then(function() {
 })
 
 
-casper.eachThen(makeUris(worksessionsPads), function(response) {
+casper.eachThen(makeUris(Pedagogy), function(response) {
     this.echo(deUri(response.data));
     this.thenOpen(response.data, function(response) {
         this.capture('render/02-0' + counter + '-' + deUri(response.url) + '.pdf');
@@ -100,7 +100,7 @@ casper.then(function() {
 })
 
 
-casper.eachThen(makeUris(notesPads), function(response) {
+casper.eachThen(makeUris(CheatSheets), function(response) {
     this.echo(deUri(response.data));
     this.thenOpen(response.data, function(response) {
         this.capture('render/03-0' + counter + '-' + deUri(response.url) + '.pdf');
@@ -112,7 +112,7 @@ casper.then(function() {
     counter = 2;
 })
 
-casper.eachThen(makeUris(cheatSheets), function(response) {
+casper.eachThen(makeUris(DebriefColophon), function(response) {
     this.echo(deUri(response.data));
     this.thenOpen(response.data, function(response) {
         this.capture('render/04-0' + counter + '-' + deUri(response.url) + '.pdf');
