@@ -18,7 +18,7 @@ var deUri = function(uri) {
     return uri.replace('http://127.0.0.1:8000/r/', '');
 }
 
-var test = ['hello-world', 'notes',];
+var test = ['test::first-test', 'worksession'];
 
 casper.start()
 
@@ -47,6 +47,31 @@ casper.thenOpen('http://127.0.0.1:8000/', function() {
     this.capture('render/00-Cover.pdf');
 });
 */
+
+
+casper.thenOpen('http://relearn.be/', function() {
+    this.echo("Start RELEARN PDF generation");
+    this.evaluate(function() {
+        $("#content").html('<p class="titlepages">1. Introduction</p>');
+    });
+    this.capture('render/01-01-Introduction.pdf');
+    this.evaluate(function() {
+        $("#content").html('<p class="titlepages">2. Worksessions</p>');
+    });
+    this.capture('render/02-01-Worksessions.pdf');
+
+    this.evaluate(function() {
+        $("#content").remove();
+        $("body").prepend('<div class="print-only" id="cover"><p class="covertitle">This is the cover that covers the cover</p><p class ="coversubtitle">Relearn - A general publication (soon)</p></div>')
+    });
+    this.capture('render/00-Cover.pdf');
+});
+
+
+
+
+
+
 
 casper.eachThen(makeUris(test), function(response) {
     this.echo(deUri(response.data));

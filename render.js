@@ -39,19 +39,19 @@ casper.page.paperSize = { format: 'A5', orientation: 'portrait',
 casper.thenOpen('http://relearn.be/', function() {
     this.echo("Start RELEARN PDF generation");
     this.evaluate(function() {
-        $("#content").html('<p style="font-family: Autopia, serif; font-size: 50px; line-height: 1em;">1. Introduction</p>');
+        $("#content").html('<p>1. Introduction</p>');
     });
     this.capture('render/01-01-Introduction.pdf');
     this.evaluate(function() {
-        $("#content").html('<p style="font-family: Autopia, serif; font-size: 50px; line-height: 1em;">2. Worksessions</p>');
+        $("#content").html('<p>2. Worksessions</p>');
     });
     this.capture('render/02-01-Worksessions.pdf');
     this.evaluate(function() {
-        $("#content").html('<p style="font-family: Autopia, serif; font-size: 50px; line-height: 1em;">3. Pedagogy</p>');
+        $("#content").html('<p>3. Pedagogy</p>');
     });
     this.capture('render/04-01-Pedagogy.pdf');
     this.evaluate(function() {
-        $("#content").html('<p style="font-family: Autopia, serif; font-size: 50px; line-height: 1em;">4. Cheat Sheets</p>');
+        $("#content").html('<p>4. Cheat Sheets</p>');
     });
     this.capture('render/05-01-Cheatsheets.pdf');
     this.evaluate(function() {
