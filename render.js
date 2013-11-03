@@ -17,7 +17,7 @@ var makeUris = function(names) {
 var deUri = function(uri) {
     return uri.replace('http://relearn.be/r/', '');
 }
-
+var Cover = ['cover'];
 var Introduction = ['2013::introduction-script', '2013::introducing-by-couple'];
 var Worksessions = ['worksessions::can-it-scale-to-the-universe::introduction', 'worksessions::can-it-scale-to-the-universe::notes', 'worksessions::gesturing-paths::introduction', 'worksessions::gesturing-paths::notes', 'worksessions::off-grid::introduction', 'worksessions::off-grid::notes', 'worksessions::off-grid::xtreme-pattern-methods'];
 var Images = ['images'];
@@ -27,14 +27,14 @@ var DebriefColophon = ['2013::debrief'];
 
 casper.start()
 
-casper.page.paperSize = { format: 'A5', orientation: 'portrait', 
-		margin: {
-                left : "25mm",
-                top : "6mm",
-                right : "9mm", 
-                bottom : "6mm"
-            	}
- };
+casper.page.paperSize = { format: 'A4', orientation: 'portrait', 
+margin: {
+    left : "15mm",
+    top : "9mm",
+    right : "50mm", 
+    bottom : "18mm"
+}
+};
 
 casper.thenOpen('http://relearn.be/', function() {
     this.echo("Start RELEARN PDF generation");
@@ -54,15 +54,15 @@ casper.thenOpen('http://relearn.be/', function() {
         $("#content").html('<p>4. Cheat Sheets</p>');
     });
     this.capture('render/05-01-Cheatsheets.pdf');
-    this.evaluate(function() {
-        $("#content").remove();
-        $("body").prepend('<div class="print-only" id="cover"><h1>This is the cover that covers the cover</h1><h2>Relearn - A general publication (soon)</h2></div>')
-    });
-    this.capture('render/00-Cover.pdf');
+//     this.evaluate(function() {
+//         $("#content").remove();
+//         $("body").prepend('<div class="print-only" id="cover"><h1>This is the cover that covers the cover</h1><h2>Relearn - A general publication (soon)</h2></div>')
+//     });
+//     this.capture('render/00-Cover.pdf');
 });
 
 
-casper.eachThen(makeUris(Introduction), function(response) {
+casper.eachThen(makeUris(Cover), function(response) {
     this.echo(deUri(response.data));
     this.thenOpen(response.data, function(response) {
         this.capture('render/01-0' + counter + '-' + deUri(response.url) + '.pdf');
@@ -74,10 +74,22 @@ casper.then(function() {
     counter = 2;
 })
 
-casper.eachThen(makeUris(Worksessions), function(response) {
+casper.eachThen(makeUris(Introduction), function(response) {
     this.echo(deUri(response.data));
     this.thenOpen(response.data, function(response) {
         this.capture('render/02-0' + counter + '-' + deUri(response.url) + '.pdf');
+    });
+    counter += 1;
+});
+
+casper.then(function() {
+    counter = 2;
+})
+
+casper.eachThen(makeUris(Worksessions), function(response) {
+    this.echo(deUri(response.data));
+    this.thenOpen(response.data, function(response) {
+        this.capture('render/03-0' + counter + '-' + deUri(response.url) + '.pdf');
     });
     counter += 1;
 });
@@ -91,7 +103,7 @@ casper.then(function() {
 casper.eachThen(makeUris(Images), function(response) {
     this.echo(deUri(response.data));
     this.thenOpen(response.data, function(response) {
-        this.capture('render/03-0' + counter + '-' + deUri(response.url) + '.pdf');
+        this.capture('render/04-0' + counter + '-' + deUri(response.url) + '.pdf');
     });
     counter += 1;
 });
@@ -104,7 +116,7 @@ casper.then(function() {
 casper.eachThen(makeUris(Pedagogy), function(response) {
     this.echo(deUri(response.data));
     this.thenOpen(response.data, function(response) {
-        this.capture('render/04-0' + counter + '-' + deUri(response.url) + '.pdf');
+        this.capture('render/05-0' + counter + '-' + deUri(response.url) + '.pdf');
     });
     counter += 1;
 });
@@ -117,7 +129,7 @@ casper.then(function() {
 casper.eachThen(makeUris(CheatSheets), function(response) {
     this.echo(deUri(response.data));
     this.thenOpen(response.data, function(response) {
-        this.capture('render/05-0' + counter + '-' + deUri(response.url) + '.pdf');
+        this.capture('render/06-0' + counter + '-' + deUri(response.url) + '.pdf');
     });
     counter += 1;
 });
@@ -129,7 +141,7 @@ casper.then(function() {
 casper.eachThen(makeUris(DebriefColophon), function(response) {
     this.echo(deUri(response.data));
     this.thenOpen(response.data, function(response) {
-        this.capture('render/06-0' + counter + '-' + deUri(response.url) + '.pdf');
+        this.capture('render/07-0' + counter + '-' + deUri(response.url) + '.pdf');
     });
     counter += 1;
 });
