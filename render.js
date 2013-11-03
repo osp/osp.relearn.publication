@@ -4,8 +4,6 @@ var casper = require('casper').create({
     logLevel: "debug"
 });
 
-var counter = 2;
-
 var makeUris = function(names) {
     var uris = [];
     for (var i=0; i<names.length; i++) {
@@ -18,124 +16,82 @@ var deUri = function(uri) {
     return uri.replace('http://relearn.be/r/', '');
 }
 
-var Introduction = ['2013::introduction-script', '2013::introducing-by-couple'];
-var Worksessions = ['worksessions::can-it-scale-to-the-universe::introduction', 'worksessions::can-it-scale-to-the-universe::notes', 'worksessions::gesturing-paths::introduction', 'worksessions::gesturing-paths::notes', 'worksessions::off-grid::introduction', 'worksessions::off-grid::notes', 'worksessions::off-grid::xtreme-pattern-methods'];
-var Images = ['images'];
-var Pedagogy = ['pedagogy::references','pedagogy::learning-situations', 'notes::copyright-licenses', 'notes::merging',];
-var CheatSheets = ['cheat-sheet::how-to-install-free-software', 'cheat-sheet::git-and-the-command-line', 'cheat-sheet::using-the-plotter', 'cheat-sheet::tex',];
-var DebriefColophon = ['2013::debrief'];
+var chapters = [
+    {
+        'title': 'Introduction',
+        'pads': ['2013::introduction-script', '2013::introducing-by-couple']
+    },
+    {
+        'title': 'Worksessions',
+        'pads': ['worksessions::can-it-scale-to-the-universe::introduction', 'worksessions::can-it-scale-to-the-universe::notes', 'worksessions::gesturing-paths::introduction', 'worksessions::gesturing-paths::notes', 'worksessions::off-grid::introduction', 'worksessions::off-grid::notes', 'worksessions::off-grid::xtreme-pattern-methods']
+    },
+    {
+        'title': 'Images',
+        'pads': ['images']
+    },
+    {
+        'title': 'Pedagogy',
+        'pads': ['pedagogy::references','pedagogy::learning-situations', 'notes::copyright-licenses', 'notes::merging']
+    },
+    {
+        'title': 'CheatSheets',
+        'pads': ['cheat-sheet::how-to-install-free-software', 'cheat-sheet::git-and-the-command-line', 'cheat-sheet::using-the-plotter', 'cheat-sheet::tex',]
+    },
+    {
+        'title': 'DebriefColophon',
+        'pads': ['2013::debrief']
+    }
+]
 
 casper.start()
 
 casper.page.paperSize = { format: 'A5', orientation: 'portrait', 
-		margin: {
-                left : "25mm",
-                top : "6mm",
-                right : "9mm", 
-                bottom : "6mm"
-            	}
- };
+    margin: {
+        left : "25mm",
+        top : "6mm",
+        right : "9mm", 
+        bottom : "6mm"
+    }
+};
 
-casper.thenOpen('http://relearn.be/', function() {
-    this.echo("Start RELEARN PDF generation");
-    this.evaluate(function() {
-        $("#content").html('<p>1. Introduction</p>');
-    });
-    this.capture('render/01-01-Introduction.pdf');
-    this.evaluate(function() {
-        $("#content").html('<p>2. Worksessions</p>');
-    });
-    this.capture('render/02-01-Worksessions.pdf');
-    this.evaluate(function() {
-        $("#content").html('<p>3. Pedagogy</p>');
-    });
-    this.capture('render/04-01-Pedagogy.pdf');
-    this.evaluate(function() {
-        $("#content").html('<p>4. Cheat Sheets</p>');
-    });
-    this.capture('render/05-01-Cheatsheets.pdf');
+var chapterCounter = 1
+
+casper.thenOpen ('http://relearn.be', function () {
+    
     this.evaluate(function() {
         $("#content").remove();
         $("body").prepend('<div class="print-only" id="cover"><h1>This is the cover that covers the cover</h1><h2>Relearn - A general publication (soon)</h2></div>')
     });
+    
     this.capture('render/00-Cover.pdf');
 });
 
-
-casper.eachThen(makeUris(Introduction), function(response) {
-    this.echo(deUri(response.data));
-    this.thenOpen(response.data, function(response) {
-        this.capture('render/01-0' + counter + '-' + deUri(response.url) + '.pdf');
+casper.eachThen (chapters, function (chapterdata) {
+    var chapter = chapterdata.data;
+    
+    this.then(function() {
+        counter = 1;
+    })
+    
+    this.thenOpen ('http://relearn.be/', function() {
+        this.evaluate (function (chapter, chapterCounter) {
+            $("#content").html('<p>' + chapterCounter + ' ' + chapter['title'] + '</p>');
+        }, chapter, chapterCounter);
+        
+        this.capture ('render/' + chapterCounter + '-' + counter + '-' + chapter['title'] + '.pdf');
     });
-    counter += 1;
-});
-
-casper.then(function() {
-    counter = 2;
-})
-
-casper.eachThen(makeUris(Worksessions), function(response) {
-    this.echo(deUri(response.data));
-    this.thenOpen(response.data, function(response) {
-        this.capture('render/02-0' + counter + '-' + deUri(response.url) + '.pdf');
+    
+    this.eachThen(makeUris(chapter['pads']), function(response) {
+        this.thenOpen(response.data, function(response) {
+            this.capture('render/' + chapterCounter + '-' + counter + '-' + deUri(response.url) + '.pdf');
+        });
+        
+        counter += 1;
     });
-    counter += 1;
-});
-
-casper.then(function() {
-    counter = 2;
-})
-
-
-
-casper.eachThen(makeUris(Images), function(response) {
-    this.echo(deUri(response.data));
-    this.thenOpen(response.data, function(response) {
-        this.capture('render/03-0' + counter + '-' + deUri(response.url) + '.pdf');
+    
+    this.then (function () {
+        chapterCounter += 1
     });
-    counter += 1;
-});
-
-casper.then(function() {
-    counter = 2;
-})
-
-
-casper.eachThen(makeUris(Pedagogy), function(response) {
-    this.echo(deUri(response.data));
-    this.thenOpen(response.data, function(response) {
-        this.capture('render/04-0' + counter + '-' + deUri(response.url) + '.pdf');
-    });
-    counter += 1;
-});
-
-casper.then(function() {
-    counter = 2;
-})
-
-
-casper.eachThen(makeUris(CheatSheets), function(response) {
-    this.echo(deUri(response.data));
-    this.thenOpen(response.data, function(response) {
-        this.capture('render/05-0' + counter + '-' + deUri(response.url) + '.pdf');
-    });
-    counter += 1;
-});
-
-casper.then(function() {
-    counter = 2;
-})
-
-casper.eachThen(makeUris(DebriefColophon), function(response) {
-    this.echo(deUri(response.data));
-    this.thenOpen(response.data, function(response) {
-        this.capture('render/06-0' + counter + '-' + deUri(response.url) + '.pdf');
-    });
-    counter += 1;
-});
-
-casper.thenOpen('http://relearn.be/commits/', function() {
-    this.capture('render/07-02-commits.pdf');
 });
 
 casper.run();
