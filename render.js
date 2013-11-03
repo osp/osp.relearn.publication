@@ -10,11 +10,11 @@ var makeUris = function(names) {
         uris.push('http://relearn.be/r/' + names[i]);
     }
     return uris;
-}
+};
 
 var deUri = function(uri) {
     return uri.replace('http://relearn.be/r/', '');
-}
+};
 
 var chapters = [
     {
@@ -41,9 +41,9 @@ var chapters = [
         'title': 'DebriefColophon',
         'pads': ['2013::debrief']
     }
-]
+];
 
-casper.start()
+casper.start();
 
 casper.page.paperSize = { format: 'A5', orientation: 'portrait', 
     margin: {
@@ -54,13 +54,13 @@ casper.page.paperSize = { format: 'A5', orientation: 'portrait',
     }
 };
 
-var chapterCounter = 1
+var chapterCounter = 1;
 
 casper.thenOpen ('http://relearn.be', function () {
     
     this.evaluate(function() {
         $("#content").remove();
-        $("body").prepend('<div class="print-only" id="cover"><h1>This is the cover that covers the cover</h1><h2>Relearn - A general publication (soon)</h2></div>')
+        $("body").prepend('<div class="print-only" id="cover"><h1>This is the cover that covers the cover</h1><h2>Relearn - A general publication (soon)</h2></div>');
     });
     
     this.capture('render/00-Cover.pdf');
@@ -71,7 +71,7 @@ casper.eachThen (chapters, function (chapterdata) {
     
     this.then(function() {
         counter = 1;
-    })
+    });
     
     this.thenOpen ('http://relearn.be/', function() {
         this.evaluate (function (chapter, chapterCounter) {
@@ -90,7 +90,7 @@ casper.eachThen (chapters, function (chapterdata) {
     });
     
     this.then (function () {
-        chapterCounter += 1
+        chapterCounter += 1;
     });
 });
 
