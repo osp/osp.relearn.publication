@@ -19,7 +19,7 @@ var deUri = function(uri) {
 var chapters = [
     {
         'title': 'Introduction',
-        'pads': ['2013::introduction-script', '2013::introducing-by-couple']
+        'pads': ['cover', '2013::introduction-script', '2013::introducing-by-couple']
     },
     {
         'title': 'Worksessions',
@@ -47,22 +47,16 @@ casper.start();
 
 casper.page.paperSize = { format: 'A5', orientation: 'portrait', 
     margin: {
-        left : "25mm",
-        top : "6mm",
-        right : "9mm", 
-        bottom : "6mm"
+        left : "0mm",
+        top : "0mm",
+        right : "0mm", 
+        bottom : "0mm"
     }
 };
 
 var chapterCounter = 1;
 
-casper.thenOpen ('http://relearn.be', function () {
-    
-    this.evaluate(function() {
-        $("#content").remove();
-        $("body").prepend('<div class="print-only" id="cover"><h1>This is the cover that covers the cover</h1><h2>Relearn - A general publication (soon)</h2></div>');
-    });
-    
+casper.thenOpen ('http://relearn.be/r/cover', function () {
     this.capture('render/00-Cover.pdf');
 });
 
