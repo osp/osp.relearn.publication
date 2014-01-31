@@ -1,8 +1,12 @@
+var fs = require('fs');
+
 var casper = require('casper').create({
     viewportSize : {width: 1190, height: 873},
     verbose: true,
     logLevel: "debug"
 });
+
+var chapters = JSON.parse(fs.read('toc.json'));
 
 var makeUris = function(names) {
     var uris = [];
@@ -15,33 +19,6 @@ var makeUris = function(names) {
 var deUri = function(uri) {
     return uri.replace('http://relearn.be/r/', '');
 };
-
-var chapters = [
-    {
-        'title': 'Introduction',
-        'pads': ['cover', '2013::introduction-script', '2013::introducing-by-couple']
-    },
-    {
-        'title': 'Worksessions',
-        'pads': ['worksessions::can-it-scale-to-the-universe::introduction', 'worksessions::can-it-scale-to-the-universe::notes', 'worksessions::gesturing-paths::introduction', 'worksessions::gesturing-paths::notes', 'worksessions::off-grid::introduction', 'worksessions::off-grid::notes', 'worksessions::off-grid::xtreme-pattern-methods']
-    },
-    {
-        'title': 'Images',
-        'pads': ['images']
-    },
-    {
-        'title': 'Pedagogy',
-        'pads': ['pedagogy::references','pedagogy::learning-situations', 'notes::copyright-licenses', 'notes::merging']
-    },
-    {
-        'title': 'CheatSheets',
-        'pads': ['cheat-sheet::how-to-install-free-software', 'cheat-sheet::git-and-the-command-line', 'cheat-sheet::using-the-plotter', 'cheat-sheet::tex',]
-    },
-    {
-        'title': 'DebriefColophon',
-        'pads': ['2013::debrief']
-    }
-];
 
 casper.start();
 

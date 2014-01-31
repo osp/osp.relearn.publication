@@ -1,4 +1,5 @@
 all:
+	curl 'http://relearn.be/ether/p/g.4onWP6cHj0xYjKMg$$tocjson/export/txt' > toc.json
 	curl 'http://relearn.be/ether/p/g.4onWP6cHj0xYjKMg$$script/export/txt' > render.js
 	rm -f render/*.pdf
 	casperjs render.js
