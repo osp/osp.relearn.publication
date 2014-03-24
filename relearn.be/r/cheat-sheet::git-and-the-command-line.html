@@ -1,0 +1,241 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="/static/css/style.css" type="text/css" charset="utf-8">
+    <script src="/static/js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <title>Relearn → git and the command line</title>
+
+    
+    
+</head>
+<body>
+    <div class="wrap screen-only" style="min-height: 15%;">
+        <div class="left-side screen-only">
+            <h1><a href="/">Relearn</a></h1>
+        </div>
+        <div class="middle">
+            
+
+<h1 class="inline">git and the command line</h1>
+
+<div id="switch">
+    
+        <a class="active button">Read</a><!-- <a class="button" href="/w/cheat-sheet::git-and-the-command-line">Write</a> -->
+    
+    <!-- <a class="button" href="#" onclick="window.print()">Print</a> -->
+</div>
+
+
+        </div>
+
+        <div class="right-side">
+            <ul id="account-buttons">
+                
+                <li><a class="button" href="/accounts/login">Log in</a></li>-->
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="wrap" style="height: 85%;">
+        <div class="left-side screen-only">
+            <nav>
+                <p>meta: <a href="/r/tocjson.html">toc</a> | <a href="/r/script.html">script</a>
+                </p>| <a href="/r/relearn::publication-todo.html">todo</a>
+                <dl><dt style="margin-bottom:16px"><a href="/r/cover">Cover</a></dt><dt>Colophon</dt>
+                    <dd>
+                        <ul>
+                            <li><a href="/r/2013::colophon.html">colophon</a>
+                            </li>
+                        </ul>
+                    </dd>
+                    <dt>Intro-duction</dt>
+                    <dd>
+                        <ul>
+                            <li><a href="/r/2013::introduction-script.html">introduction-script</a>
+                            </li>
+                            <li><a href="/r/2013::participants.html">participants</a>
+                            </li>
+                            <li><a href="/r/2013::introducing-by-couple.html">introducing-by-couple</a>
+                            </li>
+                        </ul>
+                    </dd>
+                    <dt>Work-sessions</dt>
+                    <dd>
+                        <ul>
+                            <li><a href="/r/worksessions::can-it-scale-to-the-universe::introduction.html">can-it-scale-to-the-universe::introduction</a>
+                            </li>
+                            <li><a href="/r/worksessions::can-it-scale-to-the-universe::notes.html">can-it-scale-to-the-universe::notes</a>
+                            </li>
+                            <li><a href="/r/worksessions::gesturing-paths::introduction.html">gesturing-paths::introduction</a>
+                            </li>
+                            <li><a href="/r/notes::merging.html">merging</a>
+                            </li>
+                            <li><a href="/r/worksessions::gesturing-paths::notes.html">gesturing-paths::notes</a>
+                            </li>
+                            <li><a href="/r/worksessions::off-grid::introduction.html">off-grid::introduction</a>
+                            </li>
+                            <li><a href="/r/worksessions::off-grid::notes.html.html">off-grid::notes.html</a>
+                            </li>
+                            <li><a href="/r/worksessions::off-grid::xtreme-pattern-methods.html">off-grid::xtreme-pattern-methods</a>
+                            </li>
+                        </ul>
+                    </dd>
+                    <dt>Pedagogy</dt>
+                    <dd>
+                        <ul>
+                            <li><a href="/r/pedagogy::references.html">references</a>
+                            </li>
+                            <li><a href="/r/pedagogy::learning-situations.html">learning-situations</a>
+                            </li>
+                            <li><a href="/r/notes::copyright-licenses.html">copyright-licenses</a>
+                            </li>
+                        </ul>
+                    </dd>
+                    <dt>Debrief</dt>
+                    <dd>
+                        <ul>
+                            <li><a href="/r/2013::debrief.html">debrief</a>
+                            </li>
+                        </ul>
+                    </dd>
+                    <dt>Images</dt>
+                    <dd>
+                        <ul>
+                            <li><a href="/r/images2.html">images2</a>
+                            </li>
+                        </ul>
+                    </dd>
+                    <dt>CheatSheets</dt>
+                    <dd>
+                        <ul>
+                            <li><a href="/r/cheat-sheet::git-and-the-command-line.html">git-and-the-command-line</a>
+                            </li>
+                            <li><a href="/r/cheat-sheet::using-the-plotter.html">using-the-plotter</a>
+                            </li>
+                            <li><a href="/r/cheat-sheet::tex.html">tex</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+            </nav>
+        </div>
+        <div id="content" class="middle cheat-sheet git-and-the-command-line ">
+            
+<h1 class="print-only">git and the command line</h1>
+
+<ul class="authors">
+
+    <li>Juancho Capic</li>
+
+    <li>wendy</li>
+
+    <li>OSP </li>
+
+    <li>Magda Tyzlik-Carver</li>
+
+    <li>Loraine Furter</li>
+
+    <li>Christoph Haag</li>
+
+    <li>S V</li>
+
+    <li>Anne Laforet</li>
+
+    <li>Peter Reid</li>
+
+    <li>Eric Schrijver</li>
+
+    <li>Gijs Heij</li>
+
+</ul>
+
+<!DOCTYPE HTML><html><body><style>
+.authora_JB2Fv03uQdhizXlX {background-color: #e3ffc7}
+.authora_haku8ntVRgd6QbCa {background-color: #8fefc4}
+.authora_EXsrtLqSYlMQjcBt {background-color: #ff8fe3}
+.authora_nGQTvVBACQmJldSp {background-color: #d9a9cd}
+.authora_K6DYWozYOEeIOhLE {background-color: #c1a9d9}
+.authora_ki1GkQilPMB1v479 {background-color: #efef8f}
+.authora_f3tjAEvHmvd19p5I {background-color: #ffc7f1}
+.authora_EhbN2TUhhLvmUoYv {background-color: #1f48d8}
+.authora_00rkFFeNeFtIbWz5 {background-color: #e3ffc7}
+.authora_UKuCdJieQiGQuN12 {background-color: #8fffff}
+.authora_P6M8x6u92oqUkTNq {background-color: #8fffff}
+</style> <h2 style="font-size: 1.5em;line-height: 120%;">Command-line</h2><ul class="bullet"><li><span class="authora_haku8ntVRgd6QbCa">A</span><span class="authora_UKuCdJieQiGQuN12">nother way to interact with your computer</span><span class="authora_haku8ntVRgd6QbCa">.</span></li><li><span class="authora_haku8ntVRgd6QbCa">U</span><span class="authora_UKuCdJieQiGQuN12">se text commands to instruct your computer</span><span class="authora_haku8ntVRgd6QbCa">.</span></li></ul><br><span class="authora_haku8ntVRgd6QbCa">To </span><span class="authora_UKuCdJieQiGQuN12">open</span><span class="authora_haku8ntVRgd6QbCa"> a</span><span class="authora_UKuCdJieQiGQuN12"> terminal: </span><span class="authora_haku8ntVRgd6QbCa">A</span><span class="authora_UKuCdJieQiGQuN12">ccessoires</span><span class="authora_haku8ntVRgd6QbCa">/T</span><span class="authora_UKuCdJieQiGQuN12">erminal</span><span class="authora_haku8ntVRgd6QbCa">.</span><br><br> <h3 style="font-size: 1.17em;line-height: 120%;">Basic terminal commands</h3><span class="authora_ki1GkQilPMB1v479">The first thing written in the terminal is the path, indicating where you are with the terminal, and the way to get there through the enclosing folders</span><span class="authora_haku8ntVRgd6QbCa">. The ~ sign represents your home directory, it is equivalent to the path “/home/user”.</span><br> <code style="font-family: monospace"></code><ul class="indent"><li><span class="authora_ki1GkQilPMB1v479">NameOfComputer:~ user$</span></li></ul><br><span class="authora_00rkFFeNeFtIbWz5">I</span><span class="authora_ki1GkQilPMB1v479">n tutorials in general, we use <em>$</em> to say </span><span class="authora_haku8ntVRgd6QbCa">“</span><span class="authora_ki1GkQilPMB1v479">after that </span><span class="authora_haku8ntVRgd6QbCa"><em>$</em></span><span class="authora_ki1GkQilPMB1v479"> type something</span><span class="authora_haku8ntVRgd6QbCa">”</span><span class="authora_ki1GkQilPMB1v479">. For instance <em>$ cd</em> means </span><span class="authora_haku8ntVRgd6QbCa">“</span><span class="authora_ki1GkQilPMB1v479">type <em>cd</em></span><span class="authora_haku8ntVRgd6QbCa">”<em>.</em> </span><span class="authora_00rkFFeNeFtIbWz5">Here, we decided to remove the </span><span class="authora_haku8ntVRgd6QbCa"><em>$</em></span><span class="authora_00rkFFeNeFtIbWz5"> sign so we can just copy paste directly into the terminal.</span><br><br><ul class="indent"><li><span class="authora_00rkFFeNeFtIbWz5">pwd</span></li></ul><span class="authora_00rkFFeNeFtIbWz5">Print Working Directory: tell</span><span class="authora_haku8ntVRgd6QbCa">s</span><span class="authora_00rkFFeNeFtIbWz5"> you where you are on your computer</span><span class="authora_haku8ntVRgd6QbCa">.</span><br> <code style="font-family: monospace"></code><ul class="indent"><li><span class="authora_00rkFFeNeFtIbWz5">mkdir relearn</span></li></ul><span class="authora_00rkFFeNeFtIbWz5">Ma</span><span class="authora_haku8ntVRgd6QbCa">K</span><span class="authora_00rkFFeNeFtIbWz5">e Directory called </span><span class="authora_haku8ntVRgd6QbCa">“</span><span class="authora_00rkFFeNeFtIbWz5">relearn</span><span class="authora_haku8ntVRgd6QbCa">”.</span><br> <code style="font-family: monospace"></code><ul class="indent"><li><span class="authora_00rkFFeNeFtIbWz5">cd folder</span></li></ul><span class="authora_00rkFFeNeFtIbWz5">Change Directory to </span><span class="authora_haku8ntVRgd6QbCa">“</span><span class="authora_00rkFFeNeFtIbWz5">folder</span><span class="authora_haku8ntVRgd6QbCa">”</span><br> <code style="font-family: monospace"></code><ul class="indent"><li><span class="authora_00rkFFeNeFtIbWz5">cd ..</span></li></ul><span class="authora_haku8ntVRgd6QbCa">G</span><span class="authora_00rkFFeNeFtIbWz5">o up one directory</span><span class="authora_haku8ntVRgd6QbCa">.</span><br><br><ul class="indent"><li><span class="authora_00rkFFeNeFtIbWz5">cd nameofafolder/nameofafolderintheotherfolder</span></li></ul><span class="authora_haku8ntVRgd6QbCa">G</span><span class="authora_00rkFFeNeFtIbWz5">o into a folder that is into another folder</span><span class="authora_haku8ntVRgd6QbCa">.</span><br> <code style="font-family: monospace"></code><ul class="indent"><li><span class="authora_00rkFFeNeFtIbWz5">cd</span></li></ul><span class="authora_haku8ntVRgd6QbCa">G</span><span class="authora_00rkFFeNeFtIbWz5">o back to the home folder</span><span class="authora_haku8ntVRgd6QbCa">.</span><br><br><ul class="indent"><li><span class="authora_UKuCdJieQiGQuN12">man</span><span class="authora_haku8ntVRgd6QbCa"> nameoftheprogram</span></li></ul><span class="authora_haku8ntVRgd6QbCa">S</span><span class="authora_UKuCdJieQiGQuN12">how manual for a program (e.g. <em>man ls</em>)</span><span class="authora_haku8ntVRgd6QbCa">.</span><br> <code style="font-family: monospace"></code><ul class="indent"><li><span class="authora_00rkFFeNeFtIbWz5">sh</span></li></ul><span class="authora_haku8ntVRgd6QbCa">B</span><span class="authora_00rkFFeNeFtIbWz5">ash language</span><span class="authora_haku8ntVRgd6QbCa">.</span><br> <code style="font-family: monospace"></code><ul class="indent"><li><span class="authora_00rkFFeNeFtIbWz5">#</span></li></ul><span class="authora_haku8ntVRgd6QbCa">N</span><span class="authora_00rkFFeNeFtIbWz5">ot for computers :) </span><span class="authora_haku8ntVRgd6QbCa">To write a </span><span class="authora_00rkFFeNeFtIbWz5">message to another human reading the file</span><span class="authora_haku8ntVRgd6QbCa">.</span><br> <code style="font-family: monospace"></code><ul class="indent"><li><span class="authora_00rkFFeNeFtIbWz5">mv</span></li></ul><span class="authora_haku8ntVRgd6QbCa">M</span><span class="authora_00rkFFeNeFtIbWz5">o</span><span class="authora_haku8ntVRgd6QbCa">V</span><span class="authora_00rkFFeNeFtIbWz5">e</span><span class="authora_ki1GkQilPMB1v479">/rename. </span><span class="authora_haku8ntVRgd6QbCa">Like:</span><br><ul class="indent"><li><span class="authora_ki1GkQilPMB1v479">mv file1.jpg file1_new.jpg</span></li></ul><span class="authora_haku8ntVRgd6QbCa">M</span><span class="authora_ki1GkQilPMB1v479">oves <em>file1.jpg</em> to <em>file1_new.jpg</em></span><span class="authora_haku8ntVRgd6QbCa">.</span><br> <code style="font-family: monospace"></code><ul class="indent"><li><span class="authora_ki1GkQilPMB1v479">cp file1.jpg file1_new.jpg</span></li></ul><span class="authora_haku8ntVRgd6QbCa">C</span><span class="authora_ki1GkQilPMB1v479">opies <em>file1.jpg</em> to <em>file1_new.jpg</em></span><span class="authora_haku8ntVRgd6QbCa">.</span><br><br><span class="authora_ki1GkQilPMB1v479">And in general:</span><br><ul class="indent"><li><span class="authora_ki1GkQilPMB1v479">[</span><span class="authora_00rkFFeNeFtIbWz5">nameofthesoftware</span><span class="authora_ki1GkQilPMB1v479">]</span><span class="authora_00rkFFeNeFtIbWz5"> nameofthefile</span></li></ul><span class="authora_haku8ntVRgd6QbCa">O</span><span class="authora_ki1GkQilPMB1v479">pen a file with a precise software, you need to be in the right folder, see up there</span><span class="authora_haku8ntVRgd6QbCa">.</span><br> <code style="font-family: monospace"></code><ul class="indent"><li><span class="authora_haku8ntVRgd6QbCa">ls</span></li></ul><span class="authora_haku8ntVRgd6QbCa">See what files are part of the folder you are in.</span><br> <code style="font-family: monospace"></code><ul class="indent"><li><span class="authora_haku8ntVRgd6QbCa">touch nameofthefile.txt</span></li></ul><span class="authora_haku8ntVRgd6QbCa">Make a new empty file (if it already exists, it changes the modification date to now).</span><br><br> <h3 style="font-size: 1.17em;line-height: 120%;">Various tips</h3><ul class="bullet"><li><span class="authora_ki1GkQilPMB1v479">The terminal commands basically call programs. <em>cd</em> is a little program. But you can call larger programs like <em>mpost</em> (</span><span class="authora_haku8ntVRgd6QbCa">M</span><span class="authora_ki1GkQilPMB1v479">eta</span><span class="authora_haku8ntVRgd6QbCa">P</span><span class="authora_ki1GkQilPMB1v479">ost) too. Which commands you have available thus depends on which software you have installed.</span></li><li><span class="authora_ki1GkQilPMB1v479">The parts you put after the name of the command, are called the arguments. Arguments are often the names of files: <em>mpost drawG.mp</em> will call </span><span class="authora_haku8ntVRgd6QbCa">M</span><span class="authora_ki1GkQilPMB1v479">eta</span><span class="authora_haku8ntVRgd6QbCa">P</span><span class="authora_ki1GkQilPMB1v479">ost to convert the file <em>drawG.mp</em></span><span class="authora_haku8ntVRgd6QbCa">.</span></li><li><span class="authora_haku8ntVRgd6QbCa">Y</span><span class="authora_UKuCdJieQiGQuN12">ou can use switches to supply a program with further options</span><span class="authora_ki1GkQilPMB1v479">. They are like arguments, except that you specify them with a dash</span><span class="authora_haku8ntVRgd6QbCa">,</span><span class="authora_ki1GkQilPMB1v479"> </span><span class="authora_UKuCdJieQiGQuN12">e.g.</span><span class="authora_ki1GkQilPMB1v479">      </span><span class="authora_UKuCdJieQiGQuN12"><em>ls -lh</em></span></li><li><span class="authora_haku8ntVRgd6QbCa">l</span><span class="authora_UKuCdJieQiGQuN12">ist</span><span class="authora_haku8ntVRgd6QbCa">s</span><span class="authora_UKuCdJieQiGQuN12"> files in the current directory in a </span><span class="authora_haku8ntVRgd6QbCa">L</span><span class="authora_UKuCdJieQiGQuN12">ong and </span><span class="authora_haku8ntVRgd6QbCa"><u>H</u></span><span class="authora_UKuCdJieQiGQuN12">uman readabl</span><span class="authora_ki1GkQilPMB1v479">e</span><span class="authora_haku8ntVRgd6QbCa"> format</span></li><li><span class="authora_haku8ntVRgd6QbCa">U</span><span class="authora_ki1GkQilPMB1v479">se </span><span class="authora_haku8ntVRgd6QbCa">the </span><span class="authora_ki1GkQilPMB1v479"><em>tab</em> </span><span class="authora_haku8ntVRgd6QbCa">key </span><span class="authora_ki1GkQilPMB1v479">to autocomplete names of programs or files</span><span class="authora_haku8ntVRgd6QbCa">.</span></li><li><span class="authora_haku8ntVRgd6QbCa">T</span><span class="authora_ki1GkQilPMB1v479">o have spaces in filenames you have to put quotes around the filename: </span><span class="authora_haku8ntVRgd6QbCa"><em>“</em></span><span class="authora_ki1GkQilPMB1v479"><em>example 1.jpg</em></span><span class="authora_haku8ntVRgd6QbCa"><em>”</em></span><span class="authora_ki1GkQilPMB1v479"> or escape the space in the filename: <em>example\ 1.jpg</em>. </span><span class="authora_haku8ntVRgd6QbCa">“E</span><span class="authora_ki1GkQilPMB1v479">scape</span><span class="authora_haku8ntVRgd6QbCa">”</span><span class="authora_ki1GkQilPMB1v479"> means excluding the following character from bash interpretation and is done with </span><span class="authora_haku8ntVRgd6QbCa">the backslash </span><span class="authora_ki1GkQilPMB1v479"><em>\</em></span><span class="authora_haku8ntVRgd6QbCa"><em> </em>character.</span></li><li><span class="authora_haku8ntVRgd6QbCa">U</span><span class="authora_ki1GkQilPMB1v479">se</span><span class="authora_haku8ntVRgd6QbCa"> the up</span><span class="authora_ki1GkQilPMB1v479"> arrow</span><span class="authora_haku8ntVRgd6QbCa"> ↑</span><span class="authora_ki1GkQilPMB1v479"> to access a memory of previous commands</span><span class="authora_haku8ntVRgd6QbCa">, and the down arrow ↓ if you went to much into the past.</span></li><li><span class="authora_ki1GkQilPMB1v479"><em>&&</em> means: do two actions with two programs one after the other, </span><span class="authora_haku8ntVRgd6QbCa">but only </span><span class="authora_ki1GkQilPMB1v479">if the first on</span><span class="authora_haku8ntVRgd6QbCa">e</span><span class="authora_ki1GkQilPMB1v479"> is successful:</span></li><li><span class="authora_ki1GkQilPMB1v479">mpost drawG.mp && evince drawG.1</span></li></ul><br> <h3 style="font-size: 1.17em;line-height: 120%;">Further reading</h3><br> <h4 style="line-height: 120%;">Practice:</h4><ul class="bullet"><li><span class="authora_ki1GkQilPMB1v479">Zed Shaw: The Command Line Crash Course</span></li><li><a href="http://cli.learncodethehardway.org/book/"><span class="authora_ki1GkQilPMB1v479">http://cli.learncodethehardway.org/book/</span></a><span class="authora_ki1GkQilPMB1v479"> </span></li><li><span class="authora_ki1GkQilPMB1v479">I like tight pants and mathematics and absolute beginners: unix for art students</span></li><li><a href="http://i.liketightpants.net/and/absolute-beginners-unix-for-art-students-part-1"><span class="authora_ki1GkQilPMB1v479">http://i.liketightpants.net/and/absolute-beginners-unix-for-art-students-part-1</span></a></li><li><a href="http://i.liketightpants.net/and/absolute-beginners-unix-for-art-students-part-2"><span class="authora_ki1GkQilPMB1v479">http://i.liketightpants.net/and/absolute-beginners-unix-for-art-students-part-2</span></a></li><li><a href="http://i.liketightpants.net/and/absolute-beginners-unix-for-art-students-part-3"><span class="authora_ki1GkQilPMB1v479">http://i.liketightpants.net/and/absolute-beginners-unix-for-art-students-part-3</span></a></li><li><br></li></ul> <h4 style="line-height: 120%;">Theory:</h4><ul class="bullet"><li><span class="authora_ki1GkQilPMB1v479">Florian Cramer</span><span class="authora_haku8ntVRgd6QbCa">,</span><span class="authora_ki1GkQilPMB1v479"> </span><span class="authora_haku8ntVRgd6QbCa">“</span><span class="authora_ki1GkQilPMB1v479">(echo echo) echo (echo): Command Line Poetics</span><span class="authora_haku8ntVRgd6QbCa">”, </span><a href="http://reader.lgru.net/texts/echo-echo-echo-echo-command-line-poetics/"><span class="authora_UKuCdJieQiGQuN12">http://reader.lgru.net/texts/echo-echo-echo-echo-command-line-poetics/</span></a></li><li><span class="authora_ki1GkQilPMB1v479">Thomas Scoville</span><span class="authora_haku8ntVRgd6QbCa">,</span><span class="authora_ki1GkQilPMB1v479"> </span><span class="authora_haku8ntVRgd6QbCa">“</span><span class="authora_ki1GkQilPMB1v479">The Elements Of Style: UNIX As Literature</span><span class="authora_haku8ntVRgd6QbCa">”, </span><a href="http://theody.net/elements.html"><span class="authora_UKuCdJieQiGQuN12">http://theody.net/elements.html</span></a></li><li><span class="authora_ki1GkQilPMB1v479">Neal Stephenson</span><span class="authora_haku8ntVRgd6QbCa">,</span><span class="authora_ki1GkQilPMB1v479"> <em>In the Beginning was the Command Line</em></span><span class="authora_haku8ntVRgd6QbCa">, </span><a href="http://www.cryptonomicon.com/beginning.html"><span class="authora_ki1GkQilPMB1v479">http://www.cryptonomicon.com/beginning.html</span></a></li></ul><br><span class="authora_00rkFFeNeFtIbWz5">Note to selves: mistakes from the command line </span><span class="authora_ki1GkQilPMB1v479">are </span><span class="authora_00rkFFeNeFtIbWz5">almost always because of rushing too quickly and making spelling errors. Meditation is an answer, if not the only answer.</span><br><br> <h2 style="font-size: 1.5em;line-height: 120%;">Git</h2><span class="authora_ki1GkQilPMB1v479">G</span><span class="authora_UKuCdJieQiGQuN12">it is a version management system.</span><span class="authora_ki1GkQilPMB1v479"> It is a way to </span><span class="authora_UKuCdJieQiGQuN12">keep track of work that has been done</span><span class="authora_ki1GkQilPMB1v479">, and </span><span class="authora_UKuCdJieQiGQuN12">allows </span><span class="authora_ki1GkQilPMB1v479">a group of people </span><span class="authora_UKuCdJieQiGQuN12">to work collaboratively</span><span class="authora_ki1GkQilPMB1v479">. One is able to see</span><span class="authora_UKuCdJieQiGQuN12"> who has </span><span class="authora_ki1GkQilPMB1v479">changed</span><span class="authora_UKuCdJieQiGQuN12"> what. Peopl</span><span class="authora_ki1GkQilPMB1v479">e push their </span><span class="authora_UKuCdJieQiGQuN12">documented changes to </span><span class="authora_ki1GkQilPMB1v479">a shared repository</span><span class="authora_UKuCdJieQiGQuN12"> and collaborators can synchronise.</span><br><br><a href="http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/relearn_small_1049.jpg?m=1377805207"><span class="authora_haku8ntVRgd6QbCa">http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/relearn_small_1049.jpg?m=1377805207</span></a><br><br><span class="authora_ki1GkQilPMB1v479">More about </span><span class="authora_haku8ntVRgd6QbCa">G</span><span class="authora_ki1GkQilPMB1v479">it:</span><span class="authora_haku8ntVRgd6QbCa"> </span><a href="http://relearn.be/r/notes::merging"><span class="authora_ki1GkQilPMB1v479">http://relearn.be/r/notes::merging</span></a><br><br> <h3 style="font-size: 1.17em;line-height: 120%;">Setup Git</h3> <h2 style="font-size: 1.5em;line-height: 120%;"></h2><span class="authora_haku8ntVRgd6QbCa">You need to tell Git with what name you want to “sign” your commits.</span><br><span class="authora_haku8ntVRgd6QbCa">Open up a terminal window and type these commands line by line in the terminal:</span><br> <h2 style="font-size: 1.5em;line-height: 120%;"></h2><ul class="indent"><li><span class="authora_haku8ntVRgd6QbCa">git config --global user.name "My name"</span></li><li><span class="authora_haku8ntVRgd6QbCa">git config --global user.email "your@email-address.com"</span></li></ul> <code style="font-family: monospace"></code><span class="authora_haku8ntVRgd6QbCa">To have colours on your terminal (makes it more legible):</span><br><ul class="indent"><li><span class="authora_haku8ntVRgd6QbCa">git config --global color.ui true</span></li></ul> <code style="font-family: monospace"></code><span class="authora_haku8ntVRgd6QbCa">We also need a way to authorize our server that you can write to it.</span><br><span class="authora_haku8ntVRgd6QbCa"><em>If you have the virtual machine that’s already done.</em></span><br> <code style="font-family: monospace"></code><span class="authora_haku8ntVRgd6QbCa">Otherwise, you need to generate an “ssh-key”.</span><br><span class="authora_haku8ntVRgd6QbCa">You can check if you already have one:</span><br><ul class="indent"><li><span class="authora_haku8ntVRgd6QbCa">cd ~/.ssh/</span></li><li><span class="authora_haku8ntVRgd6QbCa">ls</span></li></ul> <code style="font-family: monospace"></code><span class="authora_haku8ntVRgd6QbCa">If there are files like <em>id_rsa.pub</em> you already have a key!</span><br><span class="authora_haku8ntVRgd6QbCa">If not, run :</span><br><ul class="indent"><li><span class="authora_haku8ntVRgd6QbCa">ssh-keygen -t rsa -C "your@email-address.com"</span></li></ul> <code style="font-family: monospace"></code><span class="authora_haku8ntVRgd6QbCa">It will ask you where to put it, you can just type <em>Enter</em> for the default location.</span><br><span class="authora_haku8ntVRgd6QbCa">Then it asks you for a passphrase, meaning a password.</span><br><span class="authora_haku8ntVRgd6QbCa">Then you display the key:</span><br><ul class="indent"><li><span class="authora_haku8ntVRgd6QbCa">cat ~/.ssh/id_rsa.pub</span></li></ul> <code style="font-family: monospace"></code><span class="authora_haku8ntVRgd6QbCa">Copy it (<em>Ctrl-Shift-C</em>) and paste it on the pad, a bit below (ssh-keys).</span><br> <code style="font-family: monospace"></code><span class="authora_haku8ntVRgd6QbCa">Then, you’re ready to clone the Relearn repositories :</span><br><br><span class="authora_haku8ntVRgd6QbCa">Maybe first, create a Relearn directory on your computer.</span><br><span class="authora_haku8ntVRgd6QbCa"><em>It is already created on the virtual machine.</em></span><br><ul class="indent"><li><span class="authora_haku8ntVRgd6QbCa">mkdir ~/relearn</span></li><li><span class="authora_haku8ntVRgd6QbCa">cd relearn</span></li></ul> <code style="font-family: monospace"></code><span class="authora_haku8ntVRgd6QbCa">So now you can clone the worksessions repositories:</span><br><ul class="indent"><li><span class="authora_haku8ntVRgd6QbCa">git clone git@git.constantvzw.org:relearn.gesturing-paths.git</span></li><li><span class="authora_haku8ntVRgd6QbCa">git clone git@git.constantvzw.org:relearn.can-it-scale-to-the-universe.git</span></li><li><span class="authora_haku8ntVRgd6QbCa">git clone git@git.constantvzw.org:relearn.off-grid.git</span></li><li><span class="authora_haku8ntVRgd6QbCa">git clone git@git.constantvzw.org:relearn.Xtreme-Pattern-Methods.git</span></li></ul> <code style="font-family: monospace"></code><span class="authora_haku8ntVRgd6QbCa">And if you want the repository of the website:</span><br><ul class="indent"><li><span class="authora_haku8ntVRgd6QbCa">git clone git@git.constantvzw.org:relearn.be.git</span></li></ul> <code style="font-family: monospace"></code><span class="authora_haku8ntVRgd6QbCa">And/or the one from the publication:</span><br><ul class="indent"><li><span class="authora_haku8ntVRgd6QbCa">git clone git@git.constantvzw.org:relearn.publication.git</span></li></ul> <code style="font-family: monospace"></code><span class="authora_haku8ntVRgd6QbCa">Exchanging files between the virtual machine and the host computer:</span><br><a href="http://www.ludi.be/erg-libre/index.php?n=PmWiki.VirtualBox"><span class="authora_haku8ntVRgd6QbCa">http://www.ludi.be/erg-libre/index.php?n=PmWiki.VirtualBox</span></a><br><br> <h4 style="line-height: 120%;">To clone a repository</h4><ul class="indent"><li><span class="authora_JB2Fv03uQdhizXlX">git clone git@git.constantvzw.org:[repository name]</span></li></ul><br> <h4 style="line-height: 120%;">Basic commands</h4><ul class="indent"><li><span class="authora_JB2Fv03uQdhizXlX">git </span><span class="authora_ki1GkQilPMB1v479">status</span></li><li><span class="authora_JB2Fv03uQdhizXlX">git </span><span class="authora_ki1GkQilPMB1v479">pull</span></li><li><span class="authora_JB2Fv03uQdhizXlX">git </span><span class="authora_ki1GkQilPMB1v479">add</span></li><li><span class="authora_00rkFFeNeFtIbWz5">git </span><span class="authora_ki1GkQilPMB1v479">commit</span></li><li><span class="authora_ki1GkQilPMB1v479">git push</span></li><li><br></li><li><span class="authora_K6DYWozYOEeIOhLE">git status</span></li></ul><span class="authora_K6DYWozYOEeIOhLE">shows the state of your files (have they been uploaded via </span><span class="authora_haku8ntVRgd6QbCa">G</span><span class="authora_K6DYWozYOEeIOhLE">it or not?) When they are red, they are on your machine, but not in the </span><span class="authora_haku8ntVRgd6QbCa">G</span><span class="authora_K6DYWozYOEeIOhLE">it repository.</span><br><ul class="indent"><li><span class="authora_P6M8x6u92oqUkTNq">#    "modified" [those that were modified]</span></li><li><span class="authora_P6M8x6u92oqUkTNq">#    "untracked files" [those that are new, not in the Git yet]</span></li></ul><br><ul class="indent"><li><span class="authora_K6DYWozYOEeIOhLE"># On branch master</span></li><li><span class="authora_K6DYWozYOEeIOhLE">#</span></li><li><span class="authora_K6DYWozYOEeIOhLE"># Initial commit</span></li><li><span class="authora_K6DYWozYOEeIOhLE">#</span></li><li><span class="authora_K6DYWozYOEeIOhLE"># Untracked files:</span></li><li><span class="authora_K6DYWozYOEeIOhLE">#   to include in what will be committed</span><span class="authora_00rkFFeNeFtIbWz5">:</span></li></ul> <code style="font-family: monospace">   #   git add <file>...</code><br><ul class="indent"><li><span class="authora_f3tjAEvHmvd19p5I">git pull</span></li></ul><span class="authora_ki1GkQilPMB1v479">will try to update your local files with the changes other people have put on the server.</span><br><span class="authora_ki1GkQilPMB1v479">git will try to ‘merge’ your changes with the changes made by others.</span><br><span class="authora_ki1GkQilPMB1v479">sometimes you need to resolve the conflict yourself</span><br><br><ul class="indent"><li><span class="authora_P6M8x6u92oqUkTNq">git add filename</span></li></ul><span class="authora_P6M8x6u92oqUkTNq">will update or create this file in the </span><span class="authora_ki1GkQilPMB1v479">git index</span><br><span class="authora_P6M8x6u92oqUkTNq">it adds it in the files </span><span class="authora_haku8ntVRgd6QbCa">“</span><span class="authora_P6M8x6u92oqUkTNq">to be committed</span><span class="authora_haku8ntVRgd6QbCa">”</span><br><br><ul class="indent"><li><span class="authora_P6M8x6u92oqUkTNq">git reset HEAD filename</span></li></ul><span class="authora_ki1GkQilPMB1v479">takes the file out of the git index</span><br><br><ul class="indent"><li><span class="authora_P6M8x6u92oqUkTNq">git commit</span></li></ul><span class="authora_P6M8x6u92oqUkTNq">will finally commit it on the repository</span><br><span class="authora_haku8ntVRgd6QbCa">it </span><span class="authora_P6M8x6u92oqUkTNq">opens nano</span><span class="authora_haku8ntVRgd6QbCa">, a text</span><span class="authora_P6M8x6u92oqUkTNq"> editor</span><span class="authora_haku8ntVRgd6QbCa">,</span><span class="authora_P6M8x6u92oqUkTNq"> to add a commit message describ</span><span class="authora_haku8ntVRgd6QbCa">ing</span><span class="authora_P6M8x6u92oqUkTNq"> your change</span><br><span class="authora_P6M8x6u92oqUkTNq">so you must add a description to the changes you are committing</span><br><span class="authora_P6M8x6u92oqUkTNq">try and type text at the top of the editor</span><br><span class="authora_haku8ntVRgd6QbCa">the </span><span class="authora_P6M8x6u92oqUkTNq">first line is the title/summary of the change</span><br><span class="authora_P6M8x6u92oqUkTNq">add a blank line</span><br><span class="authora_P6M8x6u92oqUkTNq">then </span><span class="authora_ki1GkQilPMB1v479">expand </span><span class="authora_P6M8x6u92oqUkTNq">if you want!</span><br><br><span class="authora_P6M8x6u92oqUkTNq">see the commands at the bottom: <em>^X</em> to quit the editor, <em>Y</em> to say Yes: save</span><br><span class="authora_P6M8x6u92oqUkTNq">DONE!!!</span><br> <code style="font-family: monospace"></code><ul class="indent"><li><span class="authora_P6M8x6u92oqUkTNq">git log</span></li></ul><span class="authora_P6M8x6u92oqUkTNq">shows the history of the commits</span><br><span class="authora_P6M8x6u92oqUkTNq">it shows it in a shell, the </span><span class="authora_haku8ntVRgd6QbCa">sign </span><span class="authora_P6M8x6u92oqUkTNq"><em>:</em> means there are several pages, and you can scroll with the arrows]</span><br><span class="authora_P6M8x6u92oqUkTNq">to close the screen t</span><span class="authora_haku8ntVRgd6QbCa">y</span><span class="authora_P6M8x6u92oqUkTNq">pe <em>q</em></span><br><br><ul class="indent"><li><span class="authora_ki1GkQilPMB1v479">git push</span></li></ul><span class="authora_ki1GkQilPMB1v479">push back your changes to the server.</span><br><span class="authora_ki1GkQilPMB1v479">if others have also pushed in the meantime, you might need to pull first.</span><br><br> <h4 style="line-height: 120%;">Order of git</h4><ul class="indent"><li><span class="authora_K6DYWozYOEeIOhLE"><em>git add</em> </span><span class="authora_haku8ntVRgd6QbCa">→</span><span class="authora_K6DYWozYOEeIOhLE"> <em>git commit</em> </span><span class="authora_haku8ntVRgd6QbCa">→</span><span class="authora_K6DYWozYOEeIOhLE"> <em>git pull</em> </span><span class="authora_haku8ntVRgd6QbCa">→</span><span class="authora_K6DYWozYOEeIOhLE"> </span><span class="authora_haku8ntVRgd6QbCa"><em>git push</em></span></li></ul><br> <h4 style="line-height: 120%;">View Git diffs in another programme</h4><span class="authora_K6DYWozYOEeIOhLE">(get the id of the file you want to look at through git log) </span><span class="authora_haku8ntVRgd6QbCa">→</span><span class="authora_K6DYWozYOEeIOhLE"> I used Meld</span><br><ul class="indent"><li><span class="authora_K6DYWozYOEeIOhLE">git difftool 12bc7aeead4e68abb206acb6803fa0205e2e9c93 petersfile.sh</span></li></ul><span class="authora_haku8ntVRgd6QbCa">M</span><span class="authora_K6DYWozYOEeIOhLE">erge tool candidates: </span><br><ul class="bullet"><li><span class="authora_K6DYWozYOEeIOhLE">opendiff </span></li><li><span class="authora_K6DYWozYOEeIOhLE">kdiff3 </span></li><li><span class="authora_K6DYWozYOEeIOhLE">tkdiff </span></li><li><span class="authora_K6DYWozYOEeIOhLE">xxdiff </span></li><li><span class="authora_K6DYWozYOEeIOhLE">meld </span></li><li><span class="authora_K6DYWozYOEeIOhLE">kompare </span></li><li><span class="authora_K6DYWozYOEeIOhLE">gvimdiff </span></li><li><span class="authora_K6DYWozYOEeIOhLE">diffuse </span></li><li><span class="authora_K6DYWozYOEeIOhLE">ecmerge </span></li><li><span class="authora_K6DYWozYOEeIOhLE">p4merge </span></li><li><span class="authora_K6DYWozYOEeIOhLE">araxis </span></li><li><span class="authora_K6DYWozYOEeIOhLE">bc3 </span></li><li><span class="authora_K6DYWozYOEeIOhLE">emerge </span></li><li><span class="authora_K6DYWozYOEeIOhLE">vimdiff</span></li></ul><br> <h3 style="font-size: 1.17em;line-height: 120%;">To create a new git repository</h3><span class="authora_EhbN2TUhhLvmUoYv">You need a space on a server to host your project. You can host it on your own server, on Gitorious </span><a href="http://gitorious.org/"><span class="authora_EhbN2TUhhLvmUoYv">http://gitorious.org/</span></a><span class="authora_EhbN2TUhhLvmUoYv"> or on Git</span><span class="authora_haku8ntVRgd6QbCa">H</span><span class="authora_EhbN2TUhhLvmUoYv">ub </span><a href="https://github.com/"><span class="authora_EhbN2TUhhLvmUoYv">https://github.com/</span></a><span class="authora_EhbN2TUhhLvmUoYv">. Gitorious is a free software </span><span class="authora_haku8ntVRgd6QbCa">G</span><span class="authora_EhbN2TUhhLvmUoYv">it hosting service, Git</span><span class="authora_haku8ntVRgd6QbCa">H</span><span class="authora_EhbN2TUhhLvmUoYv">ub is a similar service which is closed-source but more popular. For those two online services, you need to create an account, and then there are simple explanations to create a new repository.</span><br><span class="authora_EhbN2TUhhLvmUoYv">Then, you can copy/paste the address to clone your project on </span><a href="http://relearn.be/w/relearn::repositories"><span class="authora_EhbN2TUhhLvmUoYv">http://relearn.be/w/relearn::repositories</span></a><span class="authora_EhbN2TUhhLvmUoYv"> so that we have a shared place to share different projects. Put a one line description to invite people to look at your project.</span><br><br><a href="http://git.constantvzw.org/?p=relearn.cheat-sheet.git;a=blob_plain;f=git-scheme.svg"><span class="authora_ki1GkQilPMB1v479">http://git.constantvzw.org/?p=relearn.cheat-sheet.git;a=blob_plain;f=git-scheme.svg</span></a><br><br></body></html>
+
+        </div>
+        <div class="right-side screen-only">
+            
+            
+            <h2>What we say</h2>
+            <p>The latest 10 commits, excluding the merges. There is a delay of an hour…</p>
+            
+        </div>
+    </div>
+    <script src="/static/js/relearn.js" type="text/javascript" charset="utf-8"></script>
+
+<script>
+    /* Convert links to images in images */
+   
+    var isImg = new RegExp('\.png|\.jpg|\.jpeg|\.svg', 'i');
+    var isInternal = function(uri) {
+        return uri.indexOf("constantvzw") !== -1 || uri.indexOf("ludi.be") !== -1;
+    };
+    
+    $("a[href]").each(function() {
+        var $el = $(this);
+        var href = $el.attr('href');
+        if ( href.match(isImg) ) {
+            $el.addClass("img-wrapper");
+            $el.html('<img src="' + href  + '">');
+            $img = $el.find("img");
+            if ( isInternal(href) ) {
+                // the image comes from one of our servers;
+                // we can style it accordingly
+                $img.addClass("internal");
+            } else {
+                $img.addClass("external");
+                // re-add the url if it’s an external image, by way
+                // of quick and dirty attribtuion
+                $el.append('<span class="attribution">' + href + '</span>');
+            }
+        }
+    });
+</script>
+<script src="/static/js/caman.full.js"></script>
+<script>
+    /*Caman.remoteProxy = "/proxy/";
+    
+    Caman.Event.listen("renderFinished", function (job) {
+        console.log("Every Caman finished");
+        $("#content").addClass("caman-finished");
+    });
+    
+    var process = function(el) {
+        Caman(el, function () {
+            this.saturation(-100);
+            this.exposure(-10);
+            this.contrast(20);
+            this.render();
+        });
+    }
+    
+    var images = document.querySelectorAll('img');
+    
+    for (var i=0; i < images.length; i++) {
+        if (! images[i].getAttribute('src').match('\.svg$')) {    // svg’s can’t be converted into a canvas
+            process(images[i]);
+        }
+    }
+    */
+</script>
+<script>
+
+</script>
+
+</body>
+</html>

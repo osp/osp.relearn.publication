@@ -11,29 +11,29 @@ var chapters = JSON.parse(fs.read('toc.json'));
 var makeUris = function(names) {
     var uris = [];
     for (var i=0; i<names.length; i++) {
-        uris.push('http://relearn.be/r/' + names[i]);
+        uris.push('http://localhost:8000/r/' + names[i] + '.html');
     }
     return uris;
 };
 
 var deUri = function(uri) {
-    return uri.replace('http://relearn.be/r/', '');
+    return uri.replace('http://localhost:8000/r/', '');
 };
 
 casper.start();
 
-casper.page.paperSize = { format: 'A5', orientation: 'portrait', 
+casper.page.paperSize = { format: 'A4', orientation: 'portrait', 
     margin: {
-        left : "0mm",
-        top : "0mm",
-        right : "0mm", 
-        bottom : "0mm"
+        left : "50mm",
+        top : "15mm",
+        right : "15mm", 
+        bottom : "21mm"
     }
 };
 
 var chapterCounter = 1;
 
-casper.thenOpen ('http://relearn.be/r/cover', function () {
+casper.thenOpen ('http://localhost:8000/cover.html', function () {
     this.capture('render/00-Cover.pdf');
 });
 
@@ -44,7 +44,7 @@ casper.eachThen (chapters, function (chapterdata) {
         counter = 1;
     });
     
-    this.thenOpen ('http://relearn.be/', function() {
+    this.thenOpen ('http://localhost:8000/', function() {
         this.evaluate (function (chapter, chapterCounter) {
             $("#content").html('<p>' + chapterCounter + ' ' + chapter['title'] + '</p>');
         }, chapter, chapterCounter);
@@ -54,8 +54,16 @@ casper.eachThen (chapters, function (chapterdata) {
     
     this.eachThen(makeUris(chapter['pads']), function(response) {
         this.thenOpen(response.data, function(response) {
-            this.capture('render/' + chapterCounter + '-' + counter + '-' + deUri(response.url) + '.pdf');
-        });
+        casper.waitFor(function check() {
+            return this.evaluate(function () {
+                return $("img:not([src$=svg])").length === 0;
+                    });
+            }, function then() {
+                this.capture('render/' + chapterCounter + '-' + counter + '-' + deUri(response.url) + '.pdf');
+            }, function timeout() {
+                this.capture('render/' + chapterCounter + '-' + counter + '-' + deUri(response.url) + '.pdf');
+                }, 100000);
+    });
         
         counter += 1;
     });

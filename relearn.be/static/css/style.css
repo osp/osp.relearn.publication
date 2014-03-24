@@ -1,0 +1,669 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/**@font-face definitions **/
+@font-face {
+    font-family: 'notcouriersans';
+    src: url('/static/fonts/NotCourierSans-webfont.eot');
+    src: url('/static/fonts/NotCourierSans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/static/fonts/NotCourierSans-webfont.woff') format('woff'),
+         url('/static/fonts/NotCourierSans-webfont.ttf') format('truetype'),
+         url('/static/fonts/NotCourierSans-webfont.svg#notcouriersansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'notcouriersansbold';
+    src: url('/static/fonts/NotCourierSans-Bold-webfont.eot');
+    src: url('/static/fonts/NotCourierSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/static/fonts/NotCourierSans-Bold-webfont.woff') format('woff'),
+         url('/static/fonts/NotCourierSans-Bold-webfont.ttf') format('truetype'),
+         url('/static/fonts/NotCourierSans-Bold-webfont.svg#notcouriersansbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+ 
+@font-face {
+    font-family: 'HerscheyFutura';
+    src: url('/static/fonts/herscheyfutura.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+@font-face {
+    font-family: 'HerscheyScript';
+    src: url('/static/fonts/herscheyscript.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal; 
+}
+ 
+@font-face {
+    font-family: 'HerscheyTimes';
+    src: url('/static/fonts/herscheytimes.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Autopia';
+    src: url('/static/fonts/Autopia-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AutopiaLight';
+    src: url('/static/fonts/autopia-c-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "LMProp";
+    src: url('/static/fonts/lmmonoproplt10-regular.otf') format('opentype');
+    font-weight: light;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "LMProp";
+    src: url('/static/fonts/lmmonoprop10-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "LMProp";
+    src: url('/static/fonts/lmmonoproplt10-bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "LMProp";
+    src: url('/static/fonts/lmmonoproplt10-oblique.otf') format('opentype');
+    font-weight: light;
+    font-style: italic;
+}
+
+
+/*-- REDEFINE TAGS ---------------------------------------- */
+
+// we only set the background glow on the screen, not on paper:
+@media screen {
+  background: #ffff00;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #ffff00 0%, #ffffff 68%);
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ffff00), color-stop(68%, #ffffff));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, #ffff00 0%, #ffffff 68%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, #ffff00 0%, #ffffff 68%);
+  /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, #ffff00 0%, #ffffff 68%);
+  /* IE10+ */
+  background: radial-gradient(ellipse at center, #ffff00 0%, #ffffff 68%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff00', endColorstr='#ffffff', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+}
+
+body {
+  color:black;
+  font-family: "LMProp" !important;
+  font-size: 14px;
+  line-height:1.4em;
+  padding: 0.5em;
+  font-weight: light;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  word-wrap : break-word;
+  font-feature-settings: "liga", "dlig", "clig", "kern";
+  -webkit-font-feature-settings: "liga", "dlig", "clig", "kern";
+  -o-font-feature-settings: "liga", "dlig", "clig", "kern";
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+    }
+
+/* - BLOCKS ------------------------------------- */
+iframe {
+  outline: 1px solid black;
+}
+
+img.external, canvas.external {
+   border: 1px solid black;
+    max-width: 20%; 
+    display: block;
+}
+
+img.internal,  canvas.internal {
+     border: 2px solid black;
+    max-width: 100%;
+    margin-bottom: 1em;
+}
+a.img-wrapper {
+    display: block;
+    text-decoration: none;
+}
+blockquote {
+    font-style: italic;
+    margin-left: 2em;
+}
+blockquote div {
+  font-family: patin, serif;
+}
+p {
+  margin-bottom: 30px;
+}
+p + p {
+  text-indent: 1.5em;
+}
+legend {
+  font-size: 0.75em;
+  line-height: 1.2em;
+}
+code, pre {
+    font-family: notcouriersans, monospace !important;
+    margin-left: 2em;
+    display: block;
+}
+/* - INLINES ------------------------------------- */
+a {
+  color: inherit;
+}
+a:hover {
+  background-color: yellow;
+}
+span.attribution {
+    font-size: 0.8em;
+    border-bottom: 0;
+}
+span.attribution:before {
+    content: "[";
+}
+span.attribution:after {
+    content: "]";
+}
+
+.cover {
+    font-size: 45px;
+    line-height: 1.5em;
+    position: relative;
+    z-index: 20;
+    font-weight: normal;
+    font-family: "HerscheyTimes";
+}
+    
+.printnumber {
+    font-size: 25px;
+    line-height: 1.5em;
+    position: relative;
+    z-index: 20;
+    font-weight: normal;
+    font-family: "HerscheyTimes";
+}
+
+h1{
+  font-size: 35px;
+  line-height: 1.5em;
+  position: relative;
+  z-index: 20;
+  font-weight: normal;
+  font-family: "HerscheyFutura", sans-serif;
+  margin-bottom:12px;
+}
+h2 {
+  font-family: "HerscheyScript", sans-serif;
+  font-size: 14px !important;
+  line-height: 2em !important;
+  letter-spacing: 0.1em;
+/*  text-transform: uppercase;*/
+  margin-top:6px;
+  margin-bottom:6px;
+}
+
+h3,
+h4,
+h5,
+h6{
+  font-weight: light;
+  font-family: LMProp;
+}
+h3 {
+    margin-top: 0px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 1.5em;
+}
+h4 {
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+em {
+  font-style: italic;
+}
+strong {
+  font-weight: bold;
+}
+sup {
+  font-size: 0.75em;
+  line-height: 0;
+  vertical-align: 0.25em;
+}
+li u { 
+    text-decoration: none;
+    border-bottom: 1px solid lightseagreen;
+}
+
+u { 
+    text-decoration: none;
+    border-bottom: 1px solid lightseagreen;
+}
+/* -- FORMS --------------------------*/ 
+form {
+  margin-bottom: 1.5em;
+}
+form label,
+form textarea {
+  font-size: 13.33px;
+}
+form input,
+form textarea {
+  background: none;
+  border: 1px solid lightseagreen;
+  color: black;
+  font-family: patin;
+}
+form input:focus,
+form textarea:focus {
+  background-color: white;
+}
+form input[type=text],
+form input[type=password] {
+  height: 20px;
+  position: relative;
+  top: -1px;
+}
+form input[type=submit] {
+  cursor: pointer;
+  padding: 0;
+  height: 24px;
+}
+form input[type=submit]:hover {
+  background-color: white;
+}
+
+/* - GENERIC CLASSES -------------------------------- */
+.button {
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 7px 5px;
+  box-shadow: 0 0 30px 10px yellow;
+  margin: 0 0.5em;
+  position: relative;
+  top: -3px;
+  background-color: yellow;
+}
+.button:hover {
+  background-color: white;
+}
+.small {     
+    font-family: notcouriersans;
+    font-size:1em;
+    line-height: 1.2em;
+    margin-left: 0cm;
+    margin-right: 0cm;
+    }
+.inline {
+  display: inline;
+}
+
+/* - PAGE STRUCTURE ---------------------------------*/
+.wrap {
+  margin-bottom: 20px;
+}
+.wrap:before,
+.wrap:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.wrap:after {
+  clear: both;
+}
+.left-side,
+.middle,
+.right-side {
+  float: left;
+  padding: 10px;
+}
+.left-side {
+  width: 15%;
+}
+.right-side {
+  width: 25%;
+}
+.middle {
+  padding: 10px 20px;
+}
+
+@media screen {
+  .middle {
+      width: 60%;
+      }
+}
+
+/* - NAV ------------------------------------------*/
+nav {
+  line-height: 1.2em;
+  margin-bottom: 2em;
+  font-size: 13.33px;
+}
+nav li {
+  list-style-position: inside;
+  list-style-type: none;
+}
+nav li#create-pad {
+  list-style-type: none;
+  margin: 1.5em;
+  font-size: 16px;
+}
+nav a {
+  text-decoration: none;
+}
+#account-buttons {
+  margin-top: 14px;
+}
+#account-buttons li {
+  display: inline;
+}
+div#switch {
+  display: inline;
+}
+div#switch a.active {
+  background-color: white;
+}
+
+nav dl {
+    margin-bottom: 666px;
+    }
+nav dl dt {
+    font-weight: bold;
+    }    
+nav dl dd {
+    margin-left: 16px;
+    margin-bottom: 16px;
+    }
+
+/* - MAIN CONTENT ----------------------------------*/
+#content {
+  font-weight: 200;
+}
+
+@media screen {
+#content {
+      max-width: 800px;
+    }
+ }
+
+#content li:before {
+  content: "– ";
+  margin-left: 2em;
+}
+div.intro {
+    font-family: AutopiaLight, serif;  
+    line-height: 1.8em; 
+    font-size: 15px;
+}
+
+.notes {     
+    font-family: notcouriersans;
+    font-size:12px;
+    line-height: 1.8em;
+    margin-left: 0cm;
+    margin-right: 0cm;
+    }
+    
+.commit {   
+    background-color: lightgrey;
+    float:right;  
+    width:40%;
+    font-family: notcouriersans;
+    padding:5px;
+    font-size:8px;
+    font-weight:bold;
+    line-height: 1.5em;
+    margin-left: 0.5cm;
+    margin-right: 0cm;
+    }
+
+ul.indent {
+    font-family: notcouriersans;
+}
+ul.indent li:before {
+    content: "" !important;
+}
+ 
+.inst_logo {
+  height: 20%;
+  margin-left: 0;
+}
+.right-side h2 {
+  margin-bottom: 1em;
+}
+
+p.commit-message {
+  margin-bottom: 0px;
+}
+
+/* - AUTHORSHIP -----------------------------*/
+.authorship {     
+    font-family: LMProp;
+    font-size: 6px;
+    font-weight:light;
+    letter-spacing: 0.1em;
+    line-height: 12px;
+    text-transform: uppercase;
+    position: absolute;
+    margin-top: 15px;
+    padding-top: 4px;
+    border-left: 1px solid lightgray;
+       }
+
+.authors  {
+    display: block;
+}
+ul.authors {
+     font-size: 11px;
+     margin-bottom: 1em; 
+     line-height: 1.2em;
+}
+
+ul.authors:before {
+    margin: 0;
+    content: "Authors: "
+}
+ul.authors li {
+    font-family: LMProp;
+    font-size: 6px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-right: 0.5em;
+    margin-bottom: 4px;
+    padding: 0 4px;
+    display: inline-block;
+}
+
+ul.authors li:before {
+    margin-left: 0 !important;
+    content: "" !important;
+}
+/*
+ul.authors li:after {
+    content: ","
+} 
+ul.authors li:last-child:after {
+    content: "";
+}
+*/
+
+
+/* Hides Etherpad background colours */
+#content span {
+    background-color: inherit !important;
+}
+
+/* Styles for Participants (floating divs instead of table)*/
+
+.container-couple {
+    margin: 1em 0;
+    padding-top: 1em;
+    border-top: 1px dashed;
+    display: inline-block;
+    width: 100%;
+    background-color: none;
+    }
+.container-couple .left {
+    float: left;
+    display: block;
+    width: 47%;
+    height: auto;
+    padding: 0 3% 0 0;
+    }
+.container-couple .right {
+    float: right;
+    display: block;
+    width: 47%;
+    height: auto;
+    padding: 0 3% 0 0;
+    }
+.container-couple .left-third {
+    float: left;
+    display: block;
+    width: 30%;
+    height: auto;
+    padding: 0 3% 0 0;
+    }
+.container-couple .middle-third {
+    float: left;
+    display: block;
+    width: 30%;
+    height: auto;
+    margin: 0 3% 0 0;
+    }
+.container-couple .right-third {
+    float: right;
+    display: block;
+    width: 33%;
+    height: auto;
+    }
+
+/* ------ PRINT ------ */
+@page {
+    size: 21cm 29,7cm;
+    margin-top : 15mm;
+    margin-bottom : 21mm;
+    orphans: 4; widows: 2;
+}
+h1, h2, h3, h4, h5 {
+   page-break-inside: avoid;
+   page-break-after: avoid;
+   position: relative;
+}
+
+span {
+       page-break-inside: avoid;
+       position: relative;
+       orphans: 4; widows: 2;
+}
+@page:left {
+    margin-left : 15mm;
+    margin-right : 50mm;
+}
+@page:right {
+    margin-left : 50mm;
+    margin-right : 15mm;
+}
+
+@media screen {
+    .print-only {
+        display: none;
+    }
+}
+@media print {
+      .screen-only {
+          display: none;
+        }
+    .middle {
+        width: 100%;
+        padding: 10px 30px;
+    }
+    * {
+        color: black;
+        border-color: black;
+        }
+    .notes {     
+        color: black;
+    }
+}
