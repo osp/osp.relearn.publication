@@ -3,8 +3,8 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" href="/static/css/style.css" type="text/css" charset="utf-8">
-    <script src="/static/js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css" charset="utf-8">
+    <script src="../static/js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
 
     <title>Relearn</title>
 
@@ -14,7 +14,7 @@
 <body>
     <div class="wrap screen-only" style="min-height: 15%;">
         <div class="left-side screen-only">
-            <h1><a href="/">Relearn</a></h1>
+            <h1><a href="../index.html">Relearn</a></h1>
         </div>
         <div class="middle">
             
@@ -24,7 +24,7 @@
 
         <div class="right-side">
             <ul id="account-buttons">
-                
+                <!--
                 <li><a class="button" href="/accounts/login">Log in</a></li>-->
             </ul>
         </div>
@@ -34,80 +34,80 @@
     <div class="wrap" style="height: 85%;">
         <div class="left-side screen-only">
             <nav>
-                <p>meta: <a href="/r/tocjson.html">toc</a> | <a href="/r/script.html">script</a>
-                </p>| <a href="/r/relearn::publication-todo.html">todo</a>
-                <dl><dt style="margin-bottom:16px"><a href="/r/cover">Cover</a></dt><dt>Colophon</dt>
+                <p>meta: <a href="../r/tocjson.html">toc</a> | <a href="../r/script.html">script</a>
+                </p>| <a href="../r/relearn::publication-todo.html">todo</a>
+                <dl><dt style="margin-bottom:16px"><a href="./cover.html">Cover</a></dt><dt>Colophon</dt>
                     <dd>
                         <ul>
-                            <li><a href="/r/2013::colophon.html">colophon</a>
+                            <li><a href="../r/2013::colophon.html">colophon</a>
                             </li>
                         </ul>
                     </dd>
                     <dt>Intro-duction</dt>
                     <dd>
                         <ul>
-                            <li><a href="/r/2013::introduction-script.html">introduction-script</a>
+                            <li><a href="../r/2013::introduction-script.html">introduction-script</a>
                             </li>
-                            <li><a href="/r/2013::participants.html">participants</a>
+                            <li><a href="../r/2013::participants.html">participants</a>
                             </li>
-                            <li><a href="/r/2013::introducing-by-couple.html">introducing-by-couple</a>
+                            <li><a href="../r/2013::introducing-by-couple.html">introducing-by-couple</a>
                             </li>
                         </ul>
                     </dd>
                     <dt>Work-sessions</dt>
                     <dd>
                         <ul>
-                            <li><a href="/r/worksessions::can-it-scale-to-the-universe::introduction.html">can-it-scale-to-the-universe::introduction</a>
+                            <li><a href="../r/worksessions::can-it-scale-to-the-universe::introduction.html">can-it-scale-to-the-universe::introduction</a>
                             </li>
-                            <li><a href="/r/worksessions::can-it-scale-to-the-universe::notes.html">can-it-scale-to-the-universe::notes</a>
+                            <li><a href="../r/worksessions::can-it-scale-to-the-universe::notes.html">can-it-scale-to-the-universe::notes</a>
                             </li>
-                            <li><a href="/r/worksessions::gesturing-paths::introduction.html">gesturing-paths::introduction</a>
+                            <li><a href="../r/worksessions::gesturing-paths::introduction.html">gesturing-paths::introduction</a>
                             </li>
-                            <li><a href="/r/notes::merging.html">merging</a>
+                            <li><a href="../r/notes::merging.html">merging</a>
                             </li>
-                            <li><a href="/r/worksessions::gesturing-paths::notes.html">gesturing-paths::notes</a>
+                            <li><a href="../r/worksessions::gesturing-paths::notes.html">gesturing-paths::notes</a>
                             </li>
-                            <li><a href="/r/worksessions::off-grid::introduction.html">off-grid::introduction</a>
+                            <li><a href="../r/worksessions::off-grid::introduction.html">off-grid::introduction</a>
                             </li>
-                            <li><a href="/r/worksessions::off-grid::notes.html.html">off-grid::notes.html</a>
+                            <li><a href="../r/worksessions::off-grid::notes.html.html">off-grid::notes.html</a>
                             </li>
-                            <li><a href="/r/worksessions::off-grid::xtreme-pattern-methods.html">off-grid::xtreme-pattern-methods</a>
+                            <li><a href="../r/worksessions::off-grid::xtreme-pattern-methods.html">off-grid::xtreme-pattern-methods</a>
                             </li>
                         </ul>
                     </dd>
                     <dt>Pedagogy</dt>
                     <dd>
                         <ul>
-                            <li><a href="/r/pedagogy::references.html">references</a>
+                            <li><a href="../r/pedagogy::references.html">references</a>
                             </li>
-                            <li><a href="/r/pedagogy::learning-situations.html">learning-situations</a>
+                            <li><a href="../r/pedagogy::learning-situations.html">learning-situations</a>
                             </li>
-                            <li><a href="/r/notes::copyright-licenses.html">copyright-licenses</a>
+                            <li><a href="../r/notes::copyright-licenses.html">copyright-licenses</a>
                             </li>
                         </ul>
                     </dd>
                     <dt>Debrief</dt>
                     <dd>
                         <ul>
-                            <li><a href="/r/2013::debrief.html">debrief</a>
+                            <li><a href="../r/2013::debrief.html">debrief</a>
                             </li>
                         </ul>
                     </dd>
                     <dt>Images</dt>
                     <dd>
                         <ul>
-                            <li><a href="/r/images2.html">images2</a>
+                            <li><a href="../r/images2.html">images2</a>
                             </li>
                         </ul>
                     </dd>
                     <dt>CheatSheets</dt>
                     <dd>
                         <ul>
-                            <li><a href="/r/cheat-sheet::git-and-the-command-line.html">git-and-the-command-line</a>
+                            <li><a href="../r/cheat-sheet::git-and-the-command-line.html">git-and-the-command-line</a>
                             </li>
-                            <li><a href="/r/cheat-sheet::using-the-plotter.html">using-the-plotter</a>
+                            <li><a href="../r/cheat-sheet::using-the-plotter.html">using-the-plotter</a>
                             </li>
-                            <li><a href="/r/cheat-sheet::tex.html">tex</a>
+                            <li><a href="../r/cheat-sheet::tex.html">tex</a>
                             </li>
                         </ul>
                     </dd>
@@ -119,8 +119,8 @@
   
       
     
-      <form method="post" action="/accounts/login">
-        <input type='hidden' name='csrfmiddlewaretoken' value='AhWFIrH7R7Jtr537G8qp2GNsDD374Agq' />
+      <form method="post" action="http://relearn.be/accounts/login">
+        <input type='hidden' name='csrfmiddlewaretoken' value='suuNvPGlVSxDsU5hWw87LL1eExVP9VP7' />
             <label for="id_username">Username</label>
             <input id="id_username" maxlength="254" name="username" type="text" />
             <label for="id_password">Password</label>
@@ -140,7 +140,7 @@
             
         </div>
     </div>
-    <script src="/static/js/relearn.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../static/js/relearn.js" type="text/javascript" charset="utf-8"></script>
 
 </body>
 </html>

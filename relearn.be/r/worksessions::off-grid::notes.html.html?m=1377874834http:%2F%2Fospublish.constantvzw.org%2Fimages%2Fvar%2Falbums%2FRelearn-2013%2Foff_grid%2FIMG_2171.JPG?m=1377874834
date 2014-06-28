@@ -3,8 +3,8 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" href="/static/css/style.css" type="text/css" charset="utf-8">
-    <script src="/static/js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css" charset="utf-8">
+    <script src="../static/js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
 
     <title>Relearn → off grid → notes.html</title>
 
@@ -14,7 +14,7 @@
 <body>
     <div class="wrap screen-only" style="min-height: 15%;">
         <div class="left-side screen-only">
-            <h1><a href="/">Relearn</a></h1>
+            <h1><a href="../index.html">Relearn</a></h1>
         </div>
         <div class="middle">
             
@@ -25,7 +25,7 @@
     
         <a class="active button">Read</a><!-- <a class="button" href="/w/worksessions::off-grid::notes.html">Write</a> -->
     
-    <!-- <a class="button" href="#" onclick="window.print()">Print</a> -->
+    <a class="button" href="worksessions::off-grid::notes.html.html?m=1377874834http:%252F%252Fospublish.constantvzw.org%252Fimages%252Fvar%252Falbums%252FRelearn-2013%252Foff_grid%252FIMG_2171.JPG?m=1377874834#" onclick="window.print()">Print</a>
 </div>
 
 
@@ -33,7 +33,7 @@
 
         <div class="right-side">
             <ul id="account-buttons">
-                
+                <!--
                 <li><a class="button" href="/accounts/login">Log in</a></li>-->
             </ul>
         </div>
@@ -43,80 +43,80 @@
     <div class="wrap" style="height: 85%;">
         <div class="left-side screen-only">
             <nav>
-                <p>meta: <a href="/r/tocjson.html">toc</a> | <a href="/r/script.html">script</a>
-                </p>| <a href="/r/relearn::publication-todo.html">todo</a>
-                <dl><dt style="margin-bottom:16px"><a href="/r/cover">Cover</a></dt><dt>Colophon</dt>
+                <p>meta: <a href="./tocjson.html">toc</a> | <a href="./script.html">script</a>
+                | <a href="./relearn::publication-todo.html">todo</a></p>
+                <dl><dt style="margin-bottom:16px"><a href="./cover.html">Cover</a></dt><dt>Colophon</dt>
                     <dd>
                         <ul>
-                            <li><a href="/r/2013::colophon.html">colophon</a>
+                            <li><a href="./2013::colophon.html">colophon</a>
                             </li>
                         </ul>
                     </dd>
                     <dt>Intro-duction</dt>
                     <dd>
                         <ul>
-                            <li><a href="/r/2013::introduction-script.html">introduction-script</a>
+                            <li><a href="./2013::introduction-script.html">introduction-script</a>
                             </li>
-                            <li><a href="/r/2013::participants.html">participants</a>
+                            <li><a href="./2013::participants.html">participants</a>
                             </li>
-                            <li><a href="/r/2013::introducing-by-couple.html">introducing-by-couple</a>
+                            <li><a href="./2013::introducing-by-couple.html">introducing-by-couple</a>
                             </li>
                         </ul>
                     </dd>
                     <dt>Work-sessions</dt>
                     <dd>
                         <ul>
-                            <li><a href="/r/worksessions::can-it-scale-to-the-universe::introduction.html">can-it-scale-to-the-universe::introduction</a>
+                            <li><a href="./worksessions::can-it-scale-to-the-universe::introduction.html">can-it-scale-to-the-universe::introduction</a>
                             </li>
-                            <li><a href="/r/worksessions::can-it-scale-to-the-universe::notes.html">can-it-scale-to-the-universe::notes</a>
+                            <li><a href="./worksessions::can-it-scale-to-the-universe::notes.html">can-it-scale-to-the-universe::notes</a>
                             </li>
-                            <li><a href="/r/worksessions::gesturing-paths::introduction.html">gesturing-paths::introduction</a>
+                            <li><a href="./worksessions::gesturing-paths::introduction.html">gesturing-paths::introduction</a>
                             </li>
-                            <li><a href="/r/notes::merging.html">merging</a>
+                            <li><a href="./notes::merging.html">merging</a>
                             </li>
-                            <li><a href="/r/worksessions::gesturing-paths::notes.html">gesturing-paths::notes</a>
+                            <li><a href="./worksessions::gesturing-paths::notes.html">gesturing-paths::notes</a>
                             </li>
-                            <li><a href="/r/worksessions::off-grid::introduction.html">off-grid::introduction</a>
+                            <li><a href="./worksessions::off-grid::introduction.html">off-grid::introduction</a>
                             </li>
-                            <li><a href="/r/worksessions::off-grid::notes.html.html">off-grid::notes.html</a>
+                            <li><a href="./worksessions::off-grid::notes.html.html">off-grid::notes.html</a>
                             </li>
-                            <li><a href="/r/worksessions::off-grid::xtreme-pattern-methods.html">off-grid::xtreme-pattern-methods</a>
+                            <li><a href="./worksessions::off-grid::xtreme-pattern-methods.html">off-grid::xtreme-pattern-methods</a>
                             </li>
                         </ul>
                     </dd>
                     <dt>Pedagogy</dt>
                     <dd>
                         <ul>
-                            <li><a href="/r/pedagogy::references.html">references</a>
+                            <li><a href="./pedagogy::references.html">references</a>
                             </li>
-                            <li><a href="/r/pedagogy::learning-situations.html">learning-situations</a>
+                            <li><a href="./pedagogy::learning-situations.html">learning-situations</a>
                             </li>
-                            <li><a href="/r/notes::copyright-licenses.html">copyright-licenses</a>
+                            <li><a href="./notes::copyright-licenses.html">copyright-licenses</a>
                             </li>
                         </ul>
                     </dd>
                     <dt>Debrief</dt>
                     <dd>
                         <ul>
-                            <li><a href="/r/2013::debrief.html">debrief</a>
+                            <li><a href="./2013::debrief.html">debrief</a>
                             </li>
                         </ul>
                     </dd>
                     <dt>Images</dt>
                     <dd>
                         <ul>
-                            <li><a href="/r/images2.html">images2</a>
+                            <li><a href="./images2.html">images2</a>
                             </li>
                         </ul>
                     </dd>
                     <dt>CheatSheets</dt>
                     <dd>
                         <ul>
-                            <li><a href="/r/cheat-sheet::git-and-the-command-line.html">git-and-the-command-line</a>
+                            <li><a href="./cheat-sheet::git-and-the-command-line.html">git-and-the-command-line</a>
                             </li>
-                            <li><a href="/r/cheat-sheet::using-the-plotter.html">using-the-plotter</a>
+                            <li><a href="./cheat-sheet::using-the-plotter.html">using-the-plotter</a>
                             </li>
-                            <li><a href="/r/cheat-sheet::tex.html">tex</a>
+                            <li><a href="./cheat-sheet::tex.html">tex</a>
                             </li>
                         </ul>
                     </dd>
@@ -129,7 +129,27 @@
 
 <ul class="authors">
 
+    <li>Claire Williams</li>
+
+    <li>Eric Schrijver</li>
+
+    <li>wendy</li>
+
+    <li>OSP </li>
+
+    <li>Sarah Magnan</li>
+
+    <li>Magda Tyzlik-Carver</li>
+
+    <li>Christoph Haag</li>
+
+    <li>Diane Steverlynck</li>
+
+    <li>Peter Reid</li>
+
     <li>S V</li>
+
+    <li>Anne Laforet</li>
 
 </ul>
 
@@ -140,6 +160,7 @@ L</span>
 <span class="authorship">Sarah</span>
 <span class="author-a-7z83znsz82zz75zz79zy8z90zz88znoz83zz81zz87z">
 oop to create a patter</span>
+<span class="authorship">Eric</span>
 <span class="author-a-ki1z71zkz81zilz80zz77zz66z1v479">
 n</span>
 <span class="authorship">S</span>
@@ -315,6 +336,7 @@ Claire shows examples of what she knitted with her hacked knitting machine: cell
 wav</i>
 </span>
 <span class="authorship">OSP</span>
+<span class="authorship">Caroline</span>
 <span class="author-a-z69zhbz78z2z84zz85zhhz76zvmz85zoz89zv">
  sound put into an image viewer to the knitting machine</span>
 <span class="authorship">S</span>
@@ -324,18 +346,21 @@ wav</i>
 <br>
 
 <span class="authorship">OSP</span>
+<span class="authorship">Caroline</span>
 <span class="author-a-z69zhbz78z2z84zz85zhhz76zvmz85zoz89zv">
 Wendy shows an experiment together with Claire with the hacked knitting machine: 1 left hand and 5 right hands, you leave the left hand in place, and you can change the position of your right hand and interact with the computer</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 . H</span>
 <span class="authorship">OSP</span>
+<span class="authorship">Caroline</span>
 <span class="author-a-z69zhbz78z2z84zz85zhhz76zvmz85zoz89zv">
 ands are all different but they were supposed to be the same, what happened?</span>
 
 <br>
 
 <span class="authorship">OSP</span>
+<span class="authorship">Caroline</span>
 <span class="author-a-z69zhbz78z2z84zz85zhhz76zvmz85zoz89zv">
 Magda: reference to a crochet piece of fractals</span>
 <span class="authorship">S</span>
@@ -344,8 +369,8 @@ Magda: reference to a crochet piece of fractals</span>
 
 <br>
 
-<span class="author-a-p36z70zaz77zsofz69zz88zif0qz82z">
-&lt;div class="commit"&gt;Committer : magda - Wed, 28 Aug 2013 09:41:36 - i changed "-" into "." as it was confusing something and not readig the file properly, i will change also the sh file and will put it in a moment&lt;/div&gt;</span>
+
+<div class="commit">Committer : magda - Wed, 28 Aug 2013 09:41:36 - i changed "-" into "." as it was confusing something and not readig the file properly, i will change also the sh file and will put it in a moment</div>
 
 <br>
 
@@ -382,12 +407,14 @@ http://www.math.auckland.ac.nz/~hinke/crochet/http://www.math.auckland.ac.nz/~hi
 <br>
 
 <span class="authorship">OSP</span>
+<span class="authorship">Caroline</span>
 <span class="author-a-z69zhbz78z2z84zz85zhhz76zvmz85zoz89zv">
 Open source embroidery</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
  collaborative project</span>
 <span class="authorship">OSP</span>
+<span class="authorship">Caroline</span>
 <span class="author-a-z69zhbz78z2z84zz85zhhz76zvmz85zoz89zv">
 : Ele Carpenter</span>
 
@@ -396,6 +423,7 @@ Open source embroidery</span>
 <br>
 
 <span class="authorship">OSP</span>
+<span class="authorship">Caroline</span>
 <span class="author-a-z69zhbz78z2z84zz85zhhz76zvmz85zoz89zv">
 HTML patchwork</span>
 <span class="authorship">S</span>
@@ -429,6 +457,7 @@ span>
 <br>
 
 <span class="authorship">OSP</span>
+<span class="authorship">Caroline</span>
 <span class="author-a-z69zhbz78z2z84zz85zhhz76zvmz85zoz89zv">
 How to stretch the strict constraints of a patchwork</span>
 <span class="authorship">S</span>
@@ -438,16 +467,19 @@ How to stretch the strict constraints of a patchwork</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 E</span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 ach person fill</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 s</span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
  the grid the way </span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 one</span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
  want</span>
 <span class="authorship">S</span>
@@ -470,6 +502,7 @@ e</span>
 <br>
 
 <span class="authorship">OSP</span>
+<span class="authorship">Caroline</span>
 <span class="author-a-z69zhbz78z2z84zz85zhhz76zvmz85zoz89zv">
 Peter:&nbsp;</span>
 
@@ -477,12 +510,14 @@ Peter:&nbsp;</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 I</span>
 <span class="authorship">OSP</span>
+<span class="authorship">Caroline</span>
 <span class="author-a-z69zhbz78z2z84zz85zhhz76zvmz85zoz89zv">
 nterested in</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
  </span>
 <span class="authorship">OSP</span>
+<span class="authorship">Caroline</span>
 <span class="author-a-z69zhbz78z2z84zz85zhhz76zvmz85zoz89zv">
 patterns of words</span>
 <span class="authorship">Sarah</span>
@@ -493,6 +528,7 @@ patterns of words</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 G</span>
 <span class="authorship">OSP</span>
+<span class="authorship">Caroline</span>
 <span class="author-a-z69zhbz78z2z84zz85zhhz76zvmz85zoz89zv">
 enerating words, conjunctions</span>
 
@@ -585,7 +621,7 @@ g</span>
 <span class="author-a-z69zz88zsrtz76zqz83zz89zlz77zz81zjcz66zt">
  </span>
 <span class="author-a-z69zz88zsrtz76zqz83zz89zlz77zz81zjcz66zt url">
-<a href="https://en.wikipedia.org/wiki/Dactylic_hexameter">
+<a href="./https://en.wikipedia.org/wiki/Dactylic_hexameter">
 https://en.wikipedia.org/wiki/Dactylic_hexameter</a>
 </span>
 <span class="authorship">Peter</span>
@@ -606,6 +642,7 @@ off</i>
 <br>
 
 <span class="authorship">OSP</span>
+<span class="authorship">Caroline</span>
 <span class="author-a-z69zhbz78z2z84zz85zhhz76zvmz85zoz89zv">
 Caroline</span>
 <span class="authorship">S</span>
@@ -616,6 +653,7 @@ Caroline</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 I</span>
 <span class="authorship">OSP</span>
+<span class="authorship">Caroline</span>
 <span class="author-a-z69zhbz78z2z84zz85zhhz76zvmz85zoz89zv">
 nterested in cellular automata</span>
 <span class="authorship">S</span>
@@ -626,6 +664,7 @@ nterested in cellular automata</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 S</span>
 <span class="authorship">OSP</span>
+<span class="authorship">Caroline</span>
 <span class="author-a-z69zhbz78z2z84zz85zhhz76zvmz85zoz89zv">
 arah: hard to use with java </span>
 <span class="authorship">Sarah</span>
@@ -638,28 +677,33 @@ arah: hard to use with java </span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 P</span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 rocessing programme </span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67
 za">
 →</span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
  cf</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 .</span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
  knittings of claire</span>
 
 <br>
 
 <span class="authorship">OSP</span>
+<span class="authorship">Caroline</span>
 <span class="author-a-z69zhbz78z2z84zz85zhhz76zvmz85zoz89zv">
 Alex</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 ’</span>
 <span class="authorship">OSP</span>
+<span class="authorship">Caroline</span>
 <span class="author-a-z69zhbz78z2z84zz85zhhz76zvmz85zoz89zv">
 s old experiments with recycling digital images:</span>
 <span class="authorship">S</span>
@@ -674,6 +718,7 @@ http://datateb.stdin.fr/</a>
 <br>
 
 <span class="authorship">OSP</span>
+<span class="authorship">Caroline</span>
 <span class="author-a-z69zhbz78z2z84zz85zhhz76zvmz85zoz89zv">
 Magda:</span>
 
@@ -681,6 +726,7 @@ Magda:</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 P</span>
 <span class="authorship">OSP</span>
+<span class="authorship">Caroline</span>
 <span class="author-a-z69zhbz78z2z84zz85zhhz76zvmz85zoz89zv">
 roject which translates each color of an image into a sound</span>
 <span class="authorship">S</span>
@@ -758,11 +804,13 @@ house (floors)</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 P</span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 ortug</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 u</span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 ese houses with tiles falling off</span>
 <span class="authorship">S</span>
@@ -772,16 +820,19 @@ ese houses with tiles falling off</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 One</span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
  side of the </span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 “</span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 motif</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 ”</span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
  is connected and the other ones not</span>
 <span class="authorship">S</span>
@@ -791,6 +842,7 @@ motif</span>
 <span class="author-a-haku8n
 tz86zz82zgd6z81zbz67za">
 P</span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 ieces are not filled = hole</span>
 <span class="authorship">S</span>
@@ -828,37 +880,44 @@ XPM</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 Hexadecimal c</span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 olor codes for </span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 XPM:</span>
 
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 16 </span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 digits </span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 instead of 10:</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
  0 </span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 1</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
  </span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 2</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
  </span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 3</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
  </span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 4</span>
 <span class="authorship">S</span>
@@ -870,57 +929,69 @@ i">
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
  </span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 6</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
  </span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 7</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
  </span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 8</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
  </span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 9</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
  </span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 A</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
  </span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 B</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
  </span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 C</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
  </span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 D</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
  </span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 E</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
  </span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 F</span>
 
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 RGB colors= 3 groups of 2 letters or numbers</span>
 
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 ex</span>
 <span class="authorship">S</span>
@@ -929,23 +1000,24 @@ ex</span>
 <span class="authorship">Sarah</span>
 <span class="author-a-7z83znsz82zz75zz79zy8z90zz88znoz83zz81zz87z">
 #</span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 FF</span>
 <span class="authorship">Sarah</span>
 <span class="author-a-7z83znsz82zz75zz79zy8z90zz88znoz83zz81zz87z">
  </span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 FF</span>
 <span class="authorship">Sarah</span>
 <span class="author-a-7z83znsz82zz75zz79zy8z90zz88znoz83zz81zz87z">
  </span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 FF = white&nbsp;</span>
 
-<br>
-</div>
-<di
-v id="magicdomid73" class="">
+
+
 <h2>
 <span class="author-a-z75z6z68zz89zz87zoz122zz89zz79zz69zez73zz79zhz76zz69z b">
 <b>
@@ -1092,20 +1164,11 @@ xpm</i>
 
 <br>
 
-<span class="author-a-ki1z71zkz81zilz80zz77zz66z1v479 u image image_
-http://git.constantvzw.org/?p=relearn.off-grid.git;a=blob_plain;f=magda_originalLoop.png
-url">
+<span class="author-a-ki1z71zkz81zilz80zz77zz66z1v479 u image">
 <img style="max-width:100%" src="
 http://git.constantvzw.org/?p=relearn.off-grid.git;a=blob_plain;f=magda_originalLoop.png
 ">
-<br>
-<a href="
-http://git.constantvzw.org/?p=relearn.off-grid.git;a=blob_plain;f=magda_originalLoop.png
-">
-<u>
 
-http://git.constantvzw.org/?p=relearn.off-grid.git;a=blob_plain;f=magda_originalLoop.png</u>
-</a>
 </span>
 <span class="author-a-ki1z71zkz81zilz80zz77zz66z1v479 u">
 <u>
@@ -1212,14 +1275,17 @@ XPM</span>
 <i>
 -</i>
 </span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
  (minus sign) seems to be problematic</span>
 
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 Magda r</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 e</span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 placed it and the pattern is now readable</span>
 
@@ -1228,26 +1294,32 @@ placed it and the pattern is now readable</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 T</span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 rying to merge our pat</span>
+<span class="authorship">Anne</span>
 <span class="author-a-00rkz70zz70zez78zez70ztz73zbz87zz122z5">
 t</span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 erns together as layers</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 .</span>
 
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 PierreM introduce</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 s</span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 : Potrace Library API </span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 →</span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
  </span>
 <span class="authorship">S</span>
@@ -1267,70 +1339,80 @@ http://potrace.sourceforge.net/</a>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 O</span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 pen XPM files with </span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 I</span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 n</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 k</span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 scape to vectorise them: </span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 P</span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 ath</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 /T</span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 race bitmap</span>
 
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 W</span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 endy made a quiet </span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 “</span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 tribal</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 ”</span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
  pattern</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
  which</span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
  make</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 s</span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
  me think about mola</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 ’</span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 s in </span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 P</span>
+<span class="authorship">Diane</span>
 <span class="author-a-z87zj424z66zaz88za0z122za5ari">
 anama</span>
 <span class="authorship">S</span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 .</span>
-</div>
-<div id="magi
-cdomid105" class="">
+
 <br>
 
 <span class="authorship">Wendy</span>
@@ -1397,23 +1479,10 @@ trace.</span>
 
 <br>
 
-<span class="author-a-ki1z71zkz81zilz80zz77zz66z1v479 image image_http://archive09.linux.com/articles/46124
-http://git.constantvzw.org/?p=relearn.off-grid.git;a=blob_plain;f=layers/claire/screenshotclaire.png url">
-<img style="max-width:100%" src="http://git.constantvzw.org/?p=relearn.off-grid.git;a=blob_plain;f=layers/clair
-e/screenshotclaire.png">
-<br>
-<a href="http://git.constantvzw.org/?p=relearn.off-grid.git;a=blob_plain;f=layers/claire/screenshotclaire.png
-http://git.constantvzw.org/?p=relearn.off-grid.git;a=blob_plain;f=layers/claire/screenshotclaire.png;h=08a6445b82552354f9be975ff8331e82b6b70f3b;hb=HEADhttp://git.constantvzw.org/?p=relearn.off-grid.git;a=blob_plain;f=layers/claire/screenshotclaire.png
-">
-http://git.constantvzw.org/?p=relearn.off-grid.git;a=blob_plain;f=layers/claire/screenshotclaire.png
-http://git.constantvzw.org/?p=relearn.off-grid.git;a=blob_plain;f=layers/claire/screenshotclaire.pnghttp://git.constantvzw.org/?p=relearn.off-grid.git;a=blob_plain;f=layers/claire/screenshotclaire.png
-</a>
+<span class="author-a-ki1z71zkz81zilz80zz77zz66z1v479 image url">
+<img style="max-width:100%" src="http://git.constantvzw.org/?p=relearn.off-grid.git;a=blob_plain;f=layers/claire/screenshotclaire.png">
 </span>
-<span class="author-a-ki1z71zkz81zilz80zz77zz66z1v479 url">
-<a href="http://git.constantvzw.org/?p=relearn.off-grid.git;a=blob_plain;f=layers/claire/screenshotclaire.png
-http://git.constantvzw.org/?p=relearn.off-grid.git;a=blob_plain;f=layers/claire/screenshotclaire.png;h=08a6445b82552354f9be975ff8331e82b6b70f3b;hb=HEAD">
-;h=08a6445b82552354f9be975ff8331e82b6b70f3b;hb=HEAD</a>
-</span>
+
 <span class="authorship">Claire</span>
 <span class="author-a-xz66z8hz81zz68z1z65zz90zez75zz90z0z81zz88zz80z">
 
@@ -1448,6 +1517,7 @@ ASCII</span>
 <span class="authorship">Claire</span>
 <span class="author-a-xz66z8hz81zz68z1z65zz90zez75zz90z0z81zz88zz80z">
 T</span>
+<span class="authorship">Anne</span>
 <span class="author-a-00rkz70zz70zez78zez70ztz73zbz87zz122z5">
 r</span>
 <span class="authorship">Claire</span>
@@ -1479,8 +1549,8 @@ The idea of a patchwork of the groups work comes back.</span>
 <br>
 
 <span class="author-a-p36z70zaz77zsofz69zz88zif0qz82z">
-&lt;div class="commit"&gt;Committer : DianeSteverlynck - Wed,
- 28 Aug 2013 14:38:24 - adding shade, 2 color grid- trying to see how inskape translate it to vector&lt;/div&gt;</span>
+<div class="commit">Committer : DianeSteverlynck - Wed,
+ 28 Aug 2013 14:38:24 - adding shade, 2 color grid- trying to see how inskape translate it to vector</div></span>
 
 <br>
 
@@ -1583,24 +1653,11 @@ We will go through the images of our plotter adventures.</span>
 <span class="authorship">Wendy</span>
 <span class="author-a-z75z6z68zz89zz87zoz122zz89zz79zz69zez73zz79zhz76zz69z">
 &nbsp;&nbsp;&nbsp; </span>
-<span class="author-a-z75z6z68zz89zz87zoz122zz89zz79zz69zez73zz79zhz76zz69z image image_http://git.constantvzw.org/?p=relearn.off-grid.git;a=blob;f=mixtexte.pdf;h=2e5adb8f70ae0635026c1a68fc2e875662d0bc22;hb=HEAD
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2167.JPGhttp://git.constantvzw.org/?p=relearn.off-grid.git;a=blob;f=mixtexte.pdf;h=2e5adb8f70ae0635026c1a68fc2e875662d0bc22;hb=HEAD
-url">
+<span class="author-a-z75z6z68zz89zz87zoz122zz89zz79zz69zez73zz79zhz76zz69z image url">
 <img style="max-width:100%" src="http://git.constantvzw.org/?p=relearn.off-grid.git;a=blob;f=mixtexte.pdf;h=2e5adb8f70ae0635026c1a68fc2e875662d0bc22;hb=HEAD
 http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2167.JPG">
-<br>
-<a href="http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2167
-.JPG?m=1377874714">
+</span>
 
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2167.JPG
-</a>
-</span>
-<span class="author-a-z75z6z68zz89zz87zoz122zz89zz79zz69zez73zz79zhz76zz69z url">
-<a href="
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2167.JPG?m=1377874714
-">
-?m=1377874714</a>
-</span>
 
 <br>
 
@@ -1611,28 +1668,11 @@ http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_216
 <span class="author-a-z75z6z68zz89zz87zoz122zz89zz79zz69zez73zz79zhz76zz69z">
  Plot of the outcome of the bash script:</span>
 
-<span class="author-a-z75z6z68zz89zz87zoz122zz89zz79zz69zez73zz79zhz76zz69z image image_
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2168.JPG
-url">
+<span class="author-a-z75z6z68zz89zz87zoz122zz89zz79zz69zez73zz79zhz76zz69z image url">
 <img style="max-width:100%" src="
 http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2168.JPG
 ">
-<br>
-<a href="
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2168.JPG?m=1377874714
-">
-
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2168.JPG
-</a>
 </span>
-<span class="author-a-z75z6z68zz89zz87zoz122zz89zz79zz69zez73zz79zhz76zz69z url">
-<a href="
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2168.JPG?m=1377874714
-">
-?m=1377874714</a>
-</span>
-
-<br>
 
 <span class="authorship">Wendy</span>
 <span class="author-a-z75z6z68zz89zz87zoz122zz89zz79zz69zez73zz79zhz76zz69z">
@@ -1645,38 +1685,13 @@ This is not a plot, but a colour print of this file, transformed into </span>
 <span class="author-a-haku8ntz86zz82zgd6z81zbz67za">
 :</span>
 
-<span class="author-a-z75z6z68zz89zz87zoz122zz89zz79zz69zez73zz79zhz76zz69z image image_
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2169.JPG url">
+<span class="author-a-z75z6z68zz89zz87zoz122zz89zz79zz69zez73zz79zhz76zz69z image url">
 <img style="max-width:100%" src="
 
 
 http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2169.JPG
-
 ">
-<br>
-<a href="
-
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2169.JPG?m=1377874736
-
-">
-
-
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2169.JPG
-
-</a>
 </span>
-<span class="author-a-z75z6z68zz89zz87zoz122zz89zz79zz69zez73zz79zhz76zz69z url">
-<a href="
-
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2169.JPG?m=1377874736
-
-">
-?m=1377874736</a>
-</span>
-
-<br>
-
-<br>
 
 <br>
 
@@ -1712,34 +1727,19 @@ autotrace -centerline -output-file=all_layers_wvw.svg loop_wvw2.png&nbsp;</span>
 
 <br>
 
-<span class="author-a-z75z6z68zz89zz87zoz122zz89zz79zz69zez73zz79zhz76zz69z image image_
-
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2170.JPG
-
-url">
+<span class="author-a-z75z6z68zz89zz87zoz122zz89zz79zz69zez73zz79zhz76zz69z image url">
 <img style="max-width:100%" src="
 
 http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2170.JPG
 
 ">
-<br>
-<a href="
+</span>
 
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2170.JPG?m=1377874737">
-http://ospublish.constantvzw.org/images/var/albums/Relear
-n-2013/off_grid/IMG_2170.JPG</a>
-</span>
-<span class="author-a-z75z6z68zz89zz87zoz122zz89zz79zz69zez73zz79zhz76zz69z url">
-<a href="?m=1377874737
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2170.JPG?m=1377874737?m=1377874737
-">
-?m=1377874737</a>
-</span>
 
 <br>
 
 <span class="author-a-p36z70zaz77zsofz69zz88zif0qz82z">
-&lt;div class="commit"&gt;Committer : lidia-pereira - Wed, 28 Aug 2013 14:03:58 - So this is one of my first experiences with the tracing bitmap thingy on inkscape. I was having fun with the different outcomes I could get, so I created another pattern by layering them one on top of the others.&lt;/div&gt;</span>
+<div class="commit">Committer : lidia-pereira - Wed, 28 Aug 2013 14:03:58 - So this is one of my first experiences with the tracing bitmap thingy on inkscape. I was having fun with the different outcomes I could get, so I created another pattern by layering them one on top of the others.</div></span>
 
 <br>
 
@@ -1766,23 +1766,8 @@ ed version of her </span>
 
 <br>
 
-<span class="author-a-z75z6z68zz89zz87zoz122zz89zz79zz69zez73zz79zhz76zz69z image image_?m=1377874737
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2172.JPG?m=1377874737
-url">
-<img style="max-width:100%" src="?m=1377874737
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2172.JPG?m=1377874737
-">
-<br>
-<a href="?m=1377874737
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2172.JPG?m=1377874834">
-http://ospublish.constantvzw.org/images/var/alb
-ums/Relearn-2013/off_grid/IMG_2172.JPG</a>
-</span>
-<span class="author-a-z75z6z68zz89zz87zoz122zz89zz79zz69zez73zz79zhz76zz69z url">
-<a href="?m=1377874834
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2172.JPG?m=1377874834?m=1377874834
-">
-?m=1377874834</a>
+<span class="author-a-z75z6z68zz89zz87zoz122zz89zz79zz69zez73zz79zhz76zz69z image url">
+<img style="max-width:100%" src="worksessions::off-grid::notes.html.html?m=1377874737http:%252F%252Fospublish.constantvzw.org%252Fimages%252Fvar%252Falbums%252FRelearn-2013%252Foff_grid%252FIMG_2172.JPG?m=1377874737">
 </span>
 
 <br>
@@ -1806,27 +1791,10 @@ s </span>
 
 <br>
 
-<span class="author-a-z75z6z68zz89zz87zoz122zz89zz79zz69zez73zz79zhz76zz69z image image_?m=1377874834
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2171.JPG?m=1377874834
-url">
-<img style="max-width:100%" src="?m=1377874834
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2171.JPG?m=1377874834
-">
-<br>
-<a href="?m=1377874834
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2171.JPG?m=1377874840?m=1377874834
-">
-?m=1377874834
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2171.JPG?m=1377874834
-</a>
-</span>
-<span class="author-a-z75z6z68zz89zz87zoz122zz89zz79zz69zez73zz79zhz76zz69z url">
-<a href="?m=1377874834
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2171.JPG?m=1377874840">
-?m=1377874840</a>
+<span class="author-a-z75z6z68zz89zz87zoz122zz89zz79zz69zez73zz79zhz76zz69z image url">
+<img style="max-width:100%" src="worksessions::off-grid::notes.html.html?m=1377874834http:%252F%252Fospublish.constantvzw.org%252Fimages%252Fvar%252Falbums%252FRelearn-2013%252Foff_grid%252FIMG_2171.JPG?m=1377874834">
 </span>
 
-<br>
 
 <span class="authorship">Wendy</span>
 
@@ -1844,80 +1812,34 @@ At the end, Claire put all the code we generated into </span>
 
 <br>
 
-<span class="author-a-z75z6z68zz89zz87zoz122zz89zz79zz69zez73zz79zhz76zz69z image image_
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2173.JPG
-url">
+<span class="author-a-z75z6z68zz89zz87zoz122zz89zz79zz69zez73zz79zhz76zz69z image url">
 <img style="max-width:100%" src="
 http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2173.JPG
 ">
-<br>
-<a href="
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2173.JPG?m=1377874857
-">
+</span>
 
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2173.JPG
-</a>
-</span>
-<span class="author-a-z75z6z68zz89zz87zoz122zz89zz79zz69zez73zz79zhz76zz69z url">
-<a href="
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2173.JPG?m=1377874857
-">
-?m=1377874857</a>
-</span>
 
 <br>
 
-<span class="author-a-z75z6z68zz89zz87zoz122zz89zz79zz69zez73zz79zhz76zz69z image image_
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2174.JPG
-url">
+<span class="author-a-z75z6z68zz89zz87zoz122zz89zz79zz69zez73zz79zhz76zz69z image url">
 <img style="max-width:100%" src="
 http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2174.JPG
 ">
-<br>
-<a href="
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2174.JPG?m=1377874960
-">
+</span>
 
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2174.JPG
-</a>
-</span>
-<span class="author-a-z75z6z68zz89zz87zoz122zz89zz79zz69zez73zz79zhz76zz69z url">
-<a href="
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2174.JPG?m=1377874960">
-?m=1377874960</a>
-</span>
 
 <br>
 
-<span class="author-a-z75z6z68zz89zz87zoz122zz89zz79zz69zez73zz79zhz76zz69z image image_http://ospubli
-sh.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2175.JPG url">
+<span class="author-a-z75z6z68zz89zz87zoz122zz89zz79zz69zez73zz79zhz76zz69z image url">
 <img style="max-width:100%" src="
 
 http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2175.JPG
 
 ">
-<br>
-<a href="
 
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2175.JPG?m=1377874961
-
-">
-
-
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2175.JPG
-
-</a>
-</span>
-<span class="author-a-z75z6z68zz89zz87zoz122zz89zz79zz69zez73zz79zhz76zz69z url">
-<a href="
-
-http://ospublish.constantvzw.org/images/var/albums/Relearn-2013/off_grid/IMG_2175.JPG?m=1377874961
-
-">
-?m=1377874961</a>
 </span>
 
-<br>
+
 
 <br>
 
@@ -1951,56 +1873,26 @@ http://git.constantvzw.org/?p=relearn.off-grid.git;a=tree;f=layers/iceberg
 Images</span>
 </h2>
 
-<span class="author-a-z75zz66zcuz81zz70zuz66z5pgz67zz83zevz73z image image_
-
-http://git.constantvzw.org/?p=relearn.off-grid.git;a=blob_plain;f=Empty_grid.png
-
-url">
+<span class="author-a-z75zz66zcuz81zz70zuz66z5pgz67zz83zevz73z image url">
 <img style="max-width:100%" src="
 
 http://git.constantvzw.org/?p=relearn.off-grid.git;a=blob_plain;f=Empty_grid.png
 
 ">
-<br>
-<a href="
+</span>
 
-http://git.constantvzw.org/?p=relearn.off-grid.git;a=blob_plain;f=Empty_grid.png;h=9568403fa7e94222a8b22267257c872b282b7081;hb=HEAD">
-http://git.constantvzw.org/?p=relearn.off-grid.git;a=blob_plain;f=Emp
-ty_grid.png</a>
-</span>
-<span class="author-a-z75zz66zcuz81zz70zuz66z5pgz67zz83zevz73z url">
-<a href="
-http://git.constantvzw.org/?p=relearn.off-grid.git;a=blob_plain;f=Empty_grid.png;h=9568403fa7e94222a8b22267257c872b282b7081;hb=HEAD">
-;h=9568403fa7e94222a8b22267257c872b282b7081;hb=HEAD</a>
-</span>
-<span class="">
 
-</span>
 
 <br>
 
-<span class="author-a-z75zz66zcuz81zz70zuz66z5pgz67zz83zevz73z image image_
-http://git.constantvzw.org/?p=relearn.off-grid.git;a=blob_plain;f=VA.png
-url">
+<span class="author-a-z75zz66zcuz81zz70zuz66z5pgz67zz83zevz73z image url">
 <img style="max-width:100%" src="
 http://git.constantvzw.org/?p=relearn.off-grid.git;a=blob_plain;f=VA.png
 ">
-<br>
-<a href="
-http://git.constantvzw.org/?p=relearn.off-grid.git;a=blob_plain;f=VA.png;h=935e7672560ca23eccb861c6a048aa67b4f01242;hb=HEAD
-">
-
-http://git.constantvzw.org/?p=relearn.off-grid.git;a=blob_plain;f=VA.png
-</a>
-</span>
-<span class="author-a-z75zz66zcuz81zz70zuz66z5pgz67zz83zevz73z url">
-<a href="
-http://git.constantvzw.org/?p=relearn.off-grid.git;a=blob_plain;f=VA.png;h=935e7672560ca23eccb861c6a048aa67b4f01242;hb=HEAD">
-;h=935e7672560ca23eccb861c6a048aa67b4f01242;hb=HEAD</a>
-</span>
-<span class="">
 
 </span>
+
+
 
 <span class="author-a-z75zz66zcuz81zz70zuz66z5pgz67zz83zevz73z url">
 <a href="http://git.constantvzw.org/?p=relearn.off-grid.git;a=blob_plain;f=VA2.svg;h=24342d15848e6a49029d6ebf9392a9ecc45454f4;hb=HEAD">
@@ -2018,7 +1910,7 @@ http://git.constantvzw.org/?p=relearn.off-grid.git;a=blob_plain;f=VA2.svg;h=2434
             
         </div>
     </div>
-    <script src="/static/js/relearn.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../static/js/relearn.js" type="text/javascript" charset="utf-8"></script>
 
 <script>
     /* Convert links to images in images */
@@ -2033,7 +1925,7 @@ http://git.constantvzw.org/?p=relearn.off-grid.git;a=blob_plain;f=VA2.svg;h=2434
         var href = $el.attr('href');
         if ( href.match(isImg) ) {
             $el.addClass("img-wrapper");
-            $el.html('<img src="' + href  + '">');
+            $el.html('<img src="' + href + '">');
             $img = $el.find("img");
             if ( isInternal(href) ) {
                 // the image comes from one of our servers;
@@ -2048,7 +1940,7 @@ http://git.constantvzw.org/?p=relearn.off-grid.git;a=blob_plain;f=VA2.svg;h=2434
         }
     });
 </script>
-<script src="/static/js/caman.full.js"></script>
+<script src="../static/js/caman.full.js"></script>
 <script>
     /*Caman.remoteProxy = "/proxy/";
     

@@ -23,9 +23,9 @@
 
 <div id="switch">
     
-        <a class="active button">Read</a><!-- <a class="button" href="/w/script">Write</a> -->
+        <a class="active button">Read</a><!-- <a class="button" href="/w/cover">Write</a> -->
     
-    <a class="button" href="script.html#" onclick="window.print()">Print</a>
+    <a class="button" href="cover.html#" onclick="window.print()">Print</a>
 </div>
 
 
@@ -123,13 +123,11 @@
                 </dl>
             </nav>
         </div>
-        <div id="content" class="middle script ">
+        <div id="content" class="middle cover ">
             
 <h1 class="print-only"></h1>
 
 <ul class="authors">
-
-    <li>Eric Schrijver</li>
 
     <li>S V</li>
 
@@ -138,10 +136,9 @@
 </ul>
 
 <!DOCTYPE HTML><html><body><style>
-.authora_ki1GkQilPMB1v479 {background-color: #efef8f}
-.authora_haku8ntVRgd6QbCa {background-color: #8fefc4}
 .authora_affkegh8HyJhbVxV {background-color: #e1d39d}
-</style><span class="authora_ki1GkQilPMB1v479">var fs = require('fs');</span><br><br><span class="authora_ki1GkQilPMB1v479">var casper = require('casper').create({</span><br><span class="authora_ki1GkQilPMB1v479">    viewportSize : {width: 1190, height: 873},</span><br><span class="authora_ki1GkQilPMB1v479">    verbose: true,</span><br><span class="authora_ki1GkQilPMB1v479">    logLevel: "debug"</span><br><span class="authora_ki1GkQilPMB1v479">});</span><br><br><span class="authora_ki1GkQilPMB1v479">var chapters = JSON.parse(fs.read('toc.json'));</span><br><br><span class="authora_ki1GkQilPMB1v479">var makeUris = function(names) {</span><br><span class="authora_ki1GkQilPMB1v479">    var uris = [];</span><br><span class="authora_ki1GkQilPMB1v479">    for (var i=0; i<names.length; i++) {</span><br><span class="authora_ki1GkQilPMB1v479">        uris.push('</span><a href="http://relearn.be/r/"><span class="authora_ki1GkQilPMB1v479">http://relearn.be/r/</span></a><span class="authora_ki1GkQilPMB1v479">' + names[i]);</span><br><span class="authora_ki1GkQilPMB1v479">    }</span><br><span class="authora_ki1GkQilPMB1v479">    return uris;</span><br><span class="authora_ki1GkQilPMB1v479">};</span><br><br><span class="authora_ki1GkQilPMB1v479">var deUri = function(uri) {</span><br><span class="authora_ki1GkQilPMB1v479">    return uri.replace('</span><a href="http://relearn.be/r/"><span class="authora_ki1GkQilPMB1v479">http://relearn.be/r/</span></a><span class="authora_ki1GkQilPMB1v479">', '');</span><br><span class="authora_ki1GkQilPMB1v479">};</span><br><br><span class="authora_ki1GkQilPMB1v479">casper.start();</span><br><br><span class="authora_ki1GkQilPMB1v479">casper.page.paperSize = { format: 'A</span><span class="authora_affkegh8HyJhbVxV">4</span><span class="authora_ki1GkQilPMB1v479">', orientation: 'portrait', </span><br><span class="authora_ki1GkQilPMB1v479">    margin: {</span><br><span class="authora_ki1GkQilPMB1v479">        left : "</span><span class="authora_haku8ntVRgd6QbCa">50mm</span><span class="authora_ki1GkQilPMB1v479">",</span><br><span class="authora_ki1GkQilPMB1v479">        top : "</span><span class="authora_haku8ntVRgd6QbCa">15mm</span><span class="authora_ki1GkQilPMB1v479">",</span><br><span class="authora_ki1GkQilPMB1v479">        right : "</span><span class="authora_haku8ntVRgd6QbCa">15mm</span><span class="authora_ki1GkQilPMB1v479">", </span><br><span class="authora_ki1GkQilPMB1v479">        bottom : "</span><span class="authora_haku8ntVRgd6QbCa">21mm</span><span class="authora_ki1GkQilPMB1v479">"</span><br><span class="authora_ki1GkQilPMB1v479">    }</span><br><span class="authora_ki1GkQilPMB1v479">};</span><br><br><span class="authora_ki1GkQilPMB1v479">var chapterCounter = 1;</span><br><br><span class="authora_ki1GkQilPMB1v479">casper.thenOpen ('</span><a href="./cover.html"><span class="authora_ki1GkQilPMB1v479">http://relearn.be/r/cover</span><span class="authora_haku8ntVRgd6QbCa">.html</span></a><span class="authora_ki1GkQilPMB1v479">', function () {</span><br><span class="authora_ki1GkQilPMB1v479">    this.capture('render/00-Cover.pdf');</span><br><span class="authora_ki1GkQilPMB1v479">});</span><br><br><span class="authora_ki1GkQilPMB1v479">casper.eachThen (chapters, function (chapterdata) {</span><br><span class="authora_ki1GkQilPMB1v479">    var chapter = chapterdata.data;</span><br><span class="authora_ki1GkQilPMB1v479">    </span><br><span class="authora_ki1GkQilPMB1v479">    this.then(function() {</span><br><span class="authora_ki1GkQilPMB1v479">        counter = 1;</span><br><span class="authora_ki1GkQilPMB1v479">    });</span><br><span class="authora_ki1GkQilPMB1v479">    </span><br><span class="authora_ki1GkQilPMB1v479">    this.thenOpen ('</span><a href="../index.html"><span class="authora_ki1GkQilPMB1v479">http://relearn.be/</span></a><span class="authora_ki1GkQilPMB1v479">', function() {</span><br><span class="authora_ki1GkQilPMB1v479">        this.evaluate (function (chapter, chapterCounter) {</span><br><span class="authora_ki1GkQilPMB1v479">            $("#content").html('<p>' + chapterCounter + ' ' + chapter['title'] + '</p>');</span><br><span class="authora_ki1GkQilPMB1v479">        }, chapter, chapterCounter);</span><br><span class="authora_ki1GkQilPMB1v479">        </span><br><span class="authora_ki1GkQilPMB1v479">        this.capture ('render/' + chapterCounter + '-' + counter + '-' + chapter['title'] + '.pdf');</span><br><span class="authora_ki1GkQilPMB1v479">    });</span><br><span class="authora_ki1GkQilPMB1v479">    </span><br><span class="authora_ki1GkQilPMB1v479">    this.eachThen(makeUris(chapter['pads']), function(response) {</span><br><span class="authora_ki1GkQilPMB1v479">        this.thenOpen(response.data, function(response) {</span><br><span class="authora_ki1GkQilPMB1v479">        casper.waitFor(function check() {</span><br><span class="authora_ki1GkQilPMB1v479">            return this.evaluate(function () {</span><br><span class="authora_ki1GkQilPMB1v479">                return $("img:not([src$=svg])").length === 0;</span><br><span class="authora_ki1GkQilPMB1v479">                    });</span><br><span class="authora_ki1GkQilPMB1v479">            }, function then() {</span><br><span class="authora_ki1GkQilPMB1v479">                this.capture('render/' + chapterCounter + '-' + counter + '-' + deUri(response.url) + '.pdf');</span><br><span class="authora_ki1GkQilPMB1v479">            }, function timeout() {</span><br><span class="authora_ki1GkQilPMB1v479">                this.capture('render/' + chapterCounter + '-' + counter + '-' + deUri(response.url) + '.pdf')</span><br><span class="authora_ki1GkQilPMB1v479">                }, 5000);</span><br><span class="authora_ki1GkQilPMB1v479">    });</span><br><span class="authora_ki1GkQilPMB1v479">        </span><br><span class="authora_ki1GkQilPMB1v479">        counter += 1;</span><br><span class="authora_ki1GkQilPMB1v479">    });</span><br><span class="authora_ki1GkQilPMB1v479">    </span><br><span class="authora_ki1GkQilPMB1v479">    this.then (function () {</span><br><span class="authora_ki1GkQilPMB1v479">        chapterCounter += 1;</span><br><span class="authora_ki1GkQilPMB1v479">    });</span><br><span class="authora_ki1GkQilPMB1v479">});</span><br><br><span class="authora_ki1GkQilPMB1v479">casper.run();</span><br><br></body></html>
+.authora_haku8ntVRgd6QbCa {background-color: #8fefc4}
+</style><div class="cover"> Relearn publication<span class="authora_haku8ntVRgd6QbCa"> 08-2013</span></div><br><p class=printnumber"> <br><script>var  today = new Date();var dd = today.getDate();var mm =  today.getMonth()+1;var yyyy =  today.getFullYear();if(dd<10){dd='0'+dd} if(mm<10){mm='0'+mm}  today ='/<span class="authora_haku8ntVRgd6QbCa"><br><br><br>Generated on </span>'+dd+"-"+mm+"-"+yyyy;document.write(today);</script><br><br><br></body></html>
 
         </div>
         <div class="right-side screen-only">

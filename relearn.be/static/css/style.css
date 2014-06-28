@@ -50,22 +50,22 @@ table {
 /**@font-face definitions **/
 @font-face {
     font-family: 'notcouriersans';
-    src: url('/static/fonts/NotCourierSans-webfont.eot');
-    src: url('/static/fonts/NotCourierSans-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/static/fonts/NotCourierSans-webfont.woff') format('woff'),
-         url('/static/fonts/NotCourierSans-webfont.ttf') format('truetype'),
-         url('/static/fonts/NotCourierSans-webfont.svg#notcouriersansregular') format('svg');
+    src: url('../fonts/NotCourierSans-webfont.eot');
+    src: url('../fonts/NotCourierSans-webfont.eot?') format('embedded-opentype'),
+         url('../fonts/NotCourierSans-webfont.woff') format('woff'),
+         url('../fonts/NotCourierSans-webfont.ttf') format('truetype'),
+         url('../fonts/NotCourierSans-webfont.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
     font-family: 'notcouriersansbold';
-    src: url('/static/fonts/NotCourierSans-Bold-webfont.eot');
-    src: url('/static/fonts/NotCourierSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/static/fonts/NotCourierSans-Bold-webfont.woff') format('woff'),
-         url('/static/fonts/NotCourierSans-Bold-webfont.ttf') format('truetype'),
-         url('/static/fonts/NotCourierSans-Bold-webfont.svg#notcouriersansbold') format('svg');
+    src: url('../fonts/NotCourierSans-Bold-webfont.eot');
+    src: url('../fonts/NotCourierSans-Bold-webfont.eot?') format('embedded-opentype'),
+         url('../fonts/NotCourierSans-Bold-webfont.woff') format('woff'),
+         url('../fonts/NotCourierSans-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/NotCourierSans-Bold-webfont.svg') format('svg');
     font-weight: bold;
     font-style: normal;
 
@@ -73,63 +73,63 @@ table {
  
 @font-face {
     font-family: 'HerscheyFutura';
-    src: url('/static/fonts/herscheyfutura.otf') format('opentype');
+    src: url('../fonts/herscheyfutura.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
  
 @font-face {
     font-family: 'HerscheyScript';
-    src: url('/static/fonts/herscheyscript.otf') format('opentype');
+    src: url('../fonts/herscheyscript.otf') format('opentype');
     font-weight: normal;
     font-style: normal; 
 }
  
 @font-face {
     font-family: 'HerscheyTimes';
-    src: url('/static/fonts/herscheytimes.otf') format('opentype');
+    src: url('../fonts/herscheytimes.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Autopia';
-    src: url('/static/fonts/Autopia-Regular.ttf') format('truetype');
+    src: url('../fonts/Autopia-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'AutopiaLight';
-    src: url('/static/fonts/autopia-c-light-webfont.ttf') format('truetype');
+    src: url('../fonts/autopia-c-light-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "LMProp";
-    src: url('/static/fonts/lmmonoproplt10-regular.otf') format('opentype');
+    src: url('../fonts/lmmonoproplt10-regular.otf') format('opentype');
     font-weight: light;
     font-style: normal;
 }
 
 @font-face {
     font-family: "LMProp";
-    src: url('/static/fonts/lmmonoprop10-regular.otf') format('opentype');
+    src: url('../fonts/lmmonoprop10-regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "LMProp";
-    src: url('/static/fonts/lmmonoproplt10-bold.otf') format('opentype');
+    src: url('../fonts/lmmonoproplt10-bold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "LMProp";
-    src: url('/static/fonts/lmmonoproplt10-oblique.otf') format('opentype');
+    src: url('../fonts/lmmonoproplt10-oblique.otf') format('opentype');
     font-weight: light;
     font-style: italic;
 }
