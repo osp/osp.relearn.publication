@@ -137,25 +137,6 @@ table {
 
 /*-- REDEFINE TAGS ---------------------------------------- */
 
-// we only set the background glow on the screen, not on paper:
-@media screen {
-  background: #ffff00;
-  /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover, #ffff00 0%, #ffffff 68%);
-  /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ffff00), color-stop(68%, #ffffff));
-  /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover, #ffff00 0%, #ffffff 68%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover, #ffff00 0%, #ffffff 68%);
-  /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover, #ffff00 0%, #ffffff 68%);
-  /* IE10+ */
-  background: radial-gradient(ellipse at center, #ffff00 0%, #ffffff 68%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff00', endColorstr='#ffffff', GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */
-}
 
 body {
   color:black;
@@ -174,6 +155,27 @@ body {
   -webkit-font-feature-settings: "liga", "dlig", "clig", "kern";
   -o-font-feature-settings: "liga", "dlig", "clig", "kern";
   text-rendering: optimizeLegibility;
+}
+
+// we only set the background glow on the screen, not on paper:
+@media screen {
+  background: #ffff00;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #ffff00 0%, #ffffff 68%);
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ffff00), color-stop(68%, #ffffff));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, #ffff00 0%, #ffffff 68%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, #ffff00 0%, #ffffff 68%);
+  /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, #ffff00 0%, #ffffff 68%);
+  /* IE10+ */
+  background: radial-gradient(ellipse at center, #ffff00 0%, #ffffff 68%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff00', endColorstr='#ffffff', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+
 }
 
 * {
@@ -650,8 +652,14 @@ span {
     .print-only {
         display: none;
     }
+    body {
+        font-size: 16px;
+    }
 }
 @media print {
+    body {
+        font-size: 14px;
+    }
       .screen-only {
           display: none;
         }
