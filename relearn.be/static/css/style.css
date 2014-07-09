@@ -659,6 +659,9 @@ span {
     body {
         font-size: 16px;
     }
+    ul.authors li {
+        font-size: 11px;
+    }
 }
 @media print {
     body {
