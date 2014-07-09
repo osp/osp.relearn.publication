@@ -463,6 +463,10 @@ nav dl dd {
   font-weight: 200;
 }
 
+.participants dt {
+    margin-top: 1.3em;
+}
+
 @media screen {
 #content {
       max-width: 800px;
