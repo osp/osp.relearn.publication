@@ -199,10 +199,16 @@ img.internal,  canvas.internal {
      border: 2px solid black;
     max-width: 100%;
     margin-bottom: 1em;
+    max-height: 12cm;
 }
 a.img-wrapper {
-    display: block;
+    /*display: block;*/
+    background: none !important;
     text-decoration: none;
+    border: 0;
+}
+a.img-wrapper img:hover {
+    border-color: yellow;
 }
 blockquote {
     font-style: italic;
@@ -229,6 +235,8 @@ code, pre {
 /* - INLINES ------------------------------------- */
 a {
   color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid black;
 }
 a:hover {
   background-color: yellow;
@@ -296,7 +304,7 @@ h3 {
     line-height: 1.5em;
 }
 h4 {
-  text-decoration: underline;
+  border-bottom: 1px solid black;
   margin-bottom: 0;
 }
 em {
