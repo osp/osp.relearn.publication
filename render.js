@@ -1,3 +1,12 @@
+// To generate the publication we rely on the Table of Contents specified
+// in `toc.json`. We send a ‘headless browser’ to visit all pages specified
+// in this file and to print them to pdfs.
+//
+// Run this script with the following command line: `casperjs render.js`
+//
+// Output files will be stored in the folder `render`
+//
+
 var fs = require('fs');
 
 var casper = require('casper').create({

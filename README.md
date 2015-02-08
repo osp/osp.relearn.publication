@@ -1,9 +1,21 @@
 Relearn Publication
 ===================
 
-Script that generates a publication off of http://relearn.be
+The relearn 2013 web publication, and a script to generate a PDF print publication
+based on these HTML files.
 
-If you have PhantomJS and CasperJS installed, you can run the script like this:
+Consult the online version at <http://relearn.be/2013/> 
+Download the pdf at <http://relearn.be/media/relearn-2013.pdf>
+
+We were first editing this publication dynamically using Ethertoff
+and then switched to static HTML files that you can find in this repository.
+
+To generate the publication we rely on the Table of Contents specified
+in `toc.json`. We send a ‘headless browser’ to visit all pages specified
+in this file and to print them to pdf. The headless browser we use is
+called PhantomJS and we use CasperJS to provide an easy to read script.
+
+If you have PhantomJS and CasperJS installed, you can run this script like this:
 
     casperjs render.js
 
